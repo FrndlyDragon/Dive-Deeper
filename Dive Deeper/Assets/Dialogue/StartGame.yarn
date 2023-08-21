@@ -1,5 +1,20 @@
-﻿title: StartGame
+﻿title: Start
 tags:
 ---
-
+Dev: Testing dialogue.
+Dev: I will give you some options now.
+    -> Option 1
+    <<jump Option1>>
+    -> Option 2
+    <<jump Option2>>
+===
+title: Option1
+position: 259,-83
+---
+Dev: You picked option 1.
+===
+title: Option2
+position: 267,104
+---
+Dev: You picked option 2.
 ===
