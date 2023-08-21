@@ -4,9 +4,9 @@ tags:
 Dev: Testing dialogue.
 Dev: I will give you some options now.
     -> Option 1
-    <<jump Option1>>
+        <<jump Option1>>
     -> Option 2
-    <<jump Option2>>
+        <<jump Option2>>
 ===
 title: Option1
 position: 259,-83
