@@ -18,13 +18,13 @@ public class InteractionDetector : MonoBehaviour
         // TODO: call interaction here depending on key pressed or smth else idk
     }
 
-    private void OnTriggerRange(Collider2D other) 
+    private void OnTriggerEnter2D(Collider2D other) 
     {
-        // GerComponents() beacuse we might have multiple interactions 
+        // GetComponents() beacuse we might have multiple interactions 
         // on same collider
-        InteractableObject[] interactables = other.GerComponents<InteractableObject>();
+        InteractableObject[] interactables = other.GetComponents<InteractableObject>();
 
-        if (interactables.Length() != 0) {
+        if (interactables.Length != 0) {
             foreach(InteractableObject interactable in interactables) 
             {
                 if (interactable.CanInteract()) {
@@ -35,9 +35,9 @@ public class InteractionDetector : MonoBehaviour
 
     }
 
-    private void OnTriggerExit(Collider2D other) 
+    private void OnTriggerExit2D(Collider2D other) 
     {
-        InteractableObject[] interactables = other.GerComponents<InteractableObject>();
+        InteractableObject[] interactables = other.GetComponents<InteractableObject>();
 
         foreach(InteractableObject interactable in interactables) 
         {
