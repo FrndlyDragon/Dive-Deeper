@@ -3,9 +3,11 @@ tags:
 ---
 <<play_sound Backend Space_Calm true>>
 <<change_background Backgrounds Test_1>>
+<<fade_out Backgrounds 1>>
 Dev: Testing dialogue. I'm making this one long to see something. How much wood would a woodchuck chuck if a woodchuck could chuck wood? She sells seashells by the seashore.
 Dev: I will give you some options now.
     -> Option 1
+        <<fade_in Backgrounds 1>>
         <<jump Option1>>
     -> Option 2
         <<jump Option2>>
@@ -14,6 +16,7 @@ title: Option1
 position: 259,-83
 ---
 <<change_background Backgrounds Test_2>>
+<<fade_out Backgrounds 1>>
 Dev: You picked option 1.
 ===
 title: Option2
