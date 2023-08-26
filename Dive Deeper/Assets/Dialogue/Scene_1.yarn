@@ -1,0 +1,79 @@
+﻿title: Scene_1
+tags:
+---
+<<play_sound Backend Space_Calm true>>
+<<change_background Backgrounds Office>>
+<<fade_out Backgrounds 1>>
+<<show_character Backend 1 Hamon>>
+Detective Hamon: “Busy day for you, eh, McKinnon? It’s not often we get something we can do out here.”
+<<show_character Backend 0 McKinnon>>
+Detective McKinnon: “Thank you, sir. You would think it'd be the opposite with all the gangs and such.”
+<<show_character Backend 1 Hamon>>
+Hamon: “Yes you would.”
+He chuckles. 
+Hamon: “Department as small as ours though? We do what we can. I bet you didn’t expect being thrown out here of all places, eh? Could have been in the City living the high life.”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “It’s not what I expected, but so far it’s been nice, sir.”
+<<show_character Backend 1 Hamon>>
+Hamon: “Well. Hold onto that thought and come back to me in a few months.”
+<<show_character Backend 0 McKinnon>>
+McKinnon: "..."
+<<show_character Backend 1 Hamon>>
+Hamon: “Something on your mind, McKinnon? I know drug busting isn’t the most exciting job, but a job well done is always something to be happy at.”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “No, I am, sir, don’t get me wrong. It’s just, something doesn’t sit right with me. The drugs the man was selling. They were at least grade 3 stimulants. How did someone like that get them?”
+<<show_character Backend 1 Hamon>>
+Hamon: “Got a sharp mind there. Out here, though? People can get their hands on all sorts of things. High powered lasers, holodecks, bombs. Hell, I got a guy with kinetic rounds. Didn’t know those were still around.”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “Don’t you think it’s worrying, though, sir? Grade 3 nano-stims are military. If someone is selling military tech, that is a high priority issue.”
+<<show_character Backend 1 Hamon>>
+Hamon: “Look, kid. I know you mean well, but I’m not exaggerating when I say these things happen all the time. Best you can do is report it to the main department and maybe they’ll send someone out here.”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “I’ll do that then. Thank you, sir.”
+<<show_character Backend 1 Hamon>>
+Hamon: “No problem, McKinnon. I’m clocking out now. Turn off the lights, remember? Don’t want people complaining about the police wasting power again.”
+<<show_character Backend 1 empty>>
+<<fade_in Backgrounds 1>>
+<<play_sound Backend Keyboard false>>
+Some time later.
+<<fade_out Backgrounds 1>>
+<<show_character Backend 0 McKinnon>>
+<<stop_sound Backend Keyboard>>
+McKinnon: “Alright, sent. I’ll check back tomorrow.”
+<<fade_in Backgrounds 1>>
+The next day.
+<<fade_out Backgrounds 1>>
+<<show_character Backend 0 McKinnon>>
+McKinnon stares at the monitor, shocked at what he’s reading.
+<<show_character Backend 1 Hamon>>
+Hamon: “No luck, I take it?”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “I can’t believe it. How can they not take this seriously? Do I need to gather some evidence to show them?”
+<<show_character Backend 1 Hamon>>
+Hamon: “No, kid. They just don’t see it as an issue. No amount of proof is going to change that. No amount of proof has ever changed that.”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “It doesn’t make sense. Why would they not care? If the gangs can get a hold of military equipment, who knows what they’re going to do with them.”
+<<show_character Backend 1 Hamon>>
+Hamon: “It’s not worth the trouble. If they don’t want to do something, then that’s the way it’s going to be, McKinnon.”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “They must need evidence. Either that, or if I get evidence, they’ll have to investigate after that.”
+<<show_character Backend 1 Hamon>>
+Hamon: “And how exactly do you think you’re going to do that?”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “We have the dealer here right now, sir. I can delve and see what I can figure out.”
+<<show_character Backend 1 Hamon>>
+Hamon frowns.
+Hamon: “Kid. When the heads say not to do something, it’s usually for a reason. Doing something like this, when explicitly told not to, isn’t going to turn out well. I’ve been here more than twenty years, McKinnon. You gotta learn when to let some things go. You got the guy, that’s more than enough.”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “I can’t do that. Sir. I have to try. When I have the chance to do something, I want to take that chance.”
+<<show_character Backend 1 Hamon>>
+Hamon: “Are you sure about this?”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “I didn’t graduate Academy by giving up.”
+<<show_character Backend 1 Hamon>>
+Hamon: “That’s not what I meant, but I see that you mean what you say. Alright, then. You do what you want to do. The dealer was put to sleep a while ago so he should be ready for a delve. Good luck, McKinnon.”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “Thank you, sir. I’ll do my best.”
+<<fade_in Backgrounds 1>>
+<<load_scene Backend 2>>
+===

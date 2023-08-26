@@ -22,7 +22,7 @@ public class SoundManager : MonoBehaviour
 
             sounds.source.clip = sounds.audioClip;
 
-            sounds.source.volume = sounds.soundVol;
+            sounds.source.volume = GameManager.Instance.volume;
             sounds.source.pitch = sounds.soundPitch;
             sounds.source.loop = sounds.isLooping;
         }
@@ -82,6 +82,7 @@ public class SoundManager : MonoBehaviour
         foreach (Sounds sound in audioSounds) {
             sound.soundVol = volume;
             sound.source.volume = volume;
+            GameManager.Instance.volume = volume;
         }
     }
 }

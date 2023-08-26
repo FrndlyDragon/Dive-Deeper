@@ -25,20 +25,26 @@ public class GameManager : MonoBehaviour
     public InventoryItem selectedItem;
 
     public int sceneIndex;
+    public float volume = 1f;
 
     // Start is called before the first frame update
     void Start()
     {
         DontDestroyOnLoad(gameObject);
-        UnityEngine.SceneManagement.SceneManager.sceneLoaded += UpdateScene;
+        SceneManager.sceneLoaded += UpdateScene;
     }
 
     public void UpdateScene(Scene s, LoadSceneMode mode) {
-        sceneIndex = UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex;
+        sceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
 
     [YarnCommand("load_last_scene")]
     public void LoadLastScene() {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneIndex);
+        SceneManager.LoadScene(sceneIndex);
+    }
+
+    [YarnCommand("load_scene")]
+    public void LoadScene(int sceneIndex) {
+        SceneManager.LoadScene(sceneIndex);
     }
 }
