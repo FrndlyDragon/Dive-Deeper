@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public InventoryItem selectedItem;
+
     public int sceneIndex;
 
     // Start is called before the first frame update

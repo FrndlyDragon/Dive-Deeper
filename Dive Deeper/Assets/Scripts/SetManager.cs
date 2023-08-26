@@ -1,18 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn.Unity;
 
 public class SetManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private InteractableSet[] sets;
+    private int prevSet = 0;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    [YarnCommand("activate_set")]
+    public void ActivateSet(int setIndex) {        
+        InteractableSet interactableSet = sets[prevSet];
+
+        foreach (GameObject gameObject in interactableSet.interactableObjects) {
+            gameObject.SetActive(false);
+        }
+
+        interactableSet = sets[setIndex];
+
+        foreach (GameObject gameObject in interactableSet.interactableObjects) {
+            gameObject.SetActive(true);
+        }
+
+        prevSet = setIndex;
     }
 }

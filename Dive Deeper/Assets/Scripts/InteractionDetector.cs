@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -10,12 +11,20 @@ using UnityEngine;
  */
 public class InteractionDetector : MonoBehaviour
 {
-   private List<InteractableObject> _interacrableInRange = new List<InteractableObject>();
+    private List<InteractableObject> _interacrableInRange = new List<InteractableObject>();
+    public bool selected;
+    public SpriteRenderer spriteRenderer;
 
     // Update is called once per frame
     void Update()
     {
         // TODO: call interaction here depending on key pressed or smth else idk
+        if (selected) {
+            if (Input.GetMouseButtonDown(0)) {
+                InteractableObject interactableObject = this.GetComponent<InteractableObject>();
+                interactableObject.Interact();
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other) 
@@ -48,5 +57,15 @@ public class InteractionDetector : MonoBehaviour
         }
     }
 
+    private void OnMouseOver() {
+        //Debug.Log("Selected");
+        selected = true;
+        spriteRenderer.color = Color.white;
+    }
 
+    private void OnMouseExit() {
+        //Debug.Log("Unselected");
+        selected = false;
+        spriteRenderer.color = Color.grey;
+    }
 }

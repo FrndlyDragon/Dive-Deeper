@@ -25,11 +25,11 @@ Dev: Next character.
 Dev: Now to see highlight.
 <<show_character Backend 1 Banana>>
 Dev: Done.
+<<jump NewNode>>
 ===
 title: Option2
 position: 267,104
 ---
-//<<change_background Backgrounds Test_2>>
 Dev: You picked option 2.
 Dev: Testing characters.
 <<show_character Backend 0 Banana>>
@@ -38,4 +38,16 @@ Dev: Next character.
 Dev: Now to see highlight.
 <<show_character Backend 0 Banana>>
 Dev: Done.
+<<jump NewNode>>
+===
+title: NewNode
+position: 537,-1
+---
+Dev: Testing set.
+<<activate_set Backend 0>>
+===
+title: BananaNode
+position: 535,172
+---
+Dev: Interactable successful.
 ===
