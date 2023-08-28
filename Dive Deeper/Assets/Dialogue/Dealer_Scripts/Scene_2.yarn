@@ -1,0 +1,10 @@
+﻿title: Scene_2
+tags:
+---
+<<stop_sound Backend Interrogation_Room>>
+<<play_sound Backend Dealer_Room true>>
+<<change_background Backgrounds Bedroom>>
+<<fade_out Backgrounds 1 >>
+When the darkness abates, Detective McKinnon finds himself in a neglected apartment, bottles of booze strewn about. He looks down and sees his body, now in a feminine form and dressed in a bright dress. The skirt was cut short and the neckline plunged straight down. The drug dealer, Cameron Smith, was frozen on the ground, arms splayed and eyes shut.
+<<activate_set Sets 0>>
+===

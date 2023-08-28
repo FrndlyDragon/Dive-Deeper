@@ -1,0 +1,28 @@
+﻿title: Dealer_Computer
+tags:
+---
+<<set $dealer_computer to true>>
+The computer’s screen saver is that of three people, one woman and two men. It prompts McKinnon for a PIN.
+<<jump Computer_Choice>>
+===
+title: Computer_Choice
+position: 260,2
+---
+-> Look at time
+    <<jump Computer_Time>>
+-> Look at screen saver
+    <<jump Computer_Screen>>
+-> Close
+===
+title: Computer_Time
+position: 547,-116
+---
+:The clock says January 8th, 7:49 PM
+<<jump Computer_Choice>>
+===
+title: Computer_Screen
+position: 539,153
+---
+One of the men is clearly Smith. His arm is around the neck of the other man.
+<<jump Computer_Choice>>
+===

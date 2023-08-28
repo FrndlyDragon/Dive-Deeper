@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
 using Yarn.Unity;
@@ -37,8 +38,11 @@ public class SoundManager : MonoBehaviour
             return;
         }
 
+        sound.source.volume = 0f;
         sound.source.Play();
         sound.source.loop = looping;
+        StartCoroutine(FadeVolIn(sound.source));
+
         Debug.Log("Playing " + name);
     }
 
@@ -51,7 +55,7 @@ public class SoundManager : MonoBehaviour
             return;
         }
 
-        sound.source.Stop();
+        StartCoroutine(FadeVolOut(sound.source));
     }
 
     [YarnCommand("pause_sound")]
@@ -84,5 +88,28 @@ public class SoundManager : MonoBehaviour
             sound.source.volume = volume;
             GameManager.Instance.volume = volume;
         }
+    }
+
+    public IEnumerator FadeVolIn(AudioSource audioSource) {
+        float temp = 0f;
+        while (audioSource.volume < GameManager.Instance.volume) {
+            yield return null;
+            temp += Time.deltaTime;
+            audioSource.volume = GameManager.Instance.volume * temp/2f;
+            Debug.Log(audioSource.volume);
+        }
+
+    }
+
+    public IEnumerator FadeVolOut(AudioSource audioSource) {
+        float temp = 2f;
+        while (audioSource.volume > 0) {
+            yield return null;
+            temp -= Time.deltaTime;
+            audioSource.volume = GameManager.Instance.volume * temp/2f;
+            Debug.Log(audioSource.volume);
+        }
+
+        audioSource.Stop();
     }
 }

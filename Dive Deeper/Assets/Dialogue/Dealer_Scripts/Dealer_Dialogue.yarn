@@ -1,0 +1,113 @@
+﻿title: Dealer_Dialogue
+tags:
+position: -121,14
+---
+The dealer gets up from his nap and looks around groggily. He locks onto McKinnon and gives him a lazy grin.
+<<show_character Backend 1 Dealer>>
+Cameron Smith: “Hey, Katie. What time is it?”
+<<show_character Backend 0 empty>>
+    -> It's almost 8.
+        <<show_character Backend 1 Dealer>>
+        Cameron: "Oh, we got time. Good."
+        <<jump Dealer_Dialogue_2>>
+    -> It's eleven.
+        <<set $strikes += 1>>
+        <<show_character Backend 1 Dealer>>
+        Cameron: “And you didn’t wake me up earlier?! Girl, we’re already late!”
+        <<jump Dealer_Dialogue_2>>
+    -> I don't know. 
+        <<set $strikes += 1>>
+        <<show_character Backend 1 Dealer>>
+        He looks at you weird.
+        Cameron: "You always know."
+        <<jump Dealer_Dialogue_2>>
+===
+title: Dealer_Dialogue_2
+position: 173,-144
+---
+<<show_character Backend 0 empty>>
+He goes to the table.
+<<show_character Backend 1 Dealer>>
+Cameron Smith: “Did I get any messages, Katie?”
+<<show_character Backend 0 empty>>
+    -> I didn't look.
+        <<set $strikes += 1>>
+        <<show_character Backend 1 Dealer>>
+        Cameron: “Is everything alright, Katie? You aren’t acting normal. Did something happen or… ”
+        Cameron: “Well, there’s a text. There’s a thing at 11. I need to get ready.”
+        <<jump Dealer_Dialogue_3>>
+
+    <<if $dealer_friend == true>>
+    -> Mike sent you a reminder.
+        <<show_character Backend 1 Dealer>>
+        Cameron: “Did he say anything else? I got another thing coming up and he said he’ll tell me.”
+        <<show_character Backend 0 empty>>
+        McKinnon: “Nothing else. What do you have coming up?”
+        <<show_character Backend 1 Dealer>>
+        Cameron: “Oh yeah, forgot to tell you. I gotta a deal. Mike said he’s hooking us up. Boss is going to love it. This could be our shot, babe.”
+        <<show_character Backend 0 Morpheus>>
+        Morpheus: “Memory triggered.”
+        <<fade_in Backgrounds 1>>
+        <<activate_set Sets 1>>
+        <<change_background Backgrounds Alleyway>>
+        <<show_character Backend 0 empty>>
+    <<endif>>
+
+    <<if $dealer_phone == true>>
+    -> You got a message about the thing at 11. 
+        <<show_character Backend 1 Dealer>>
+        Cameron: “Oh, that’s all? Alright. I guess I’ll start getting ready.”
+        <<jump Dealer_Dialogue_3>>
+    <<endif>>
+===
+title: Dealer_Dialogue_3
+position: 160,12
+---
+<<show_character Backend 0 empty>>
+    -> So what’s the thing at 11?
+        <<show_character Backend 1 Dealer>>
+        Cameron: “You don’t remember?”
+        He trails off and glares at McKinnon.
+        Cameron: “You’re not Katie. Who the fuck are you? What are you doing here? What did you do to Katie!”
+        <<show_character Backend 0 Morpheus>>
+        Morpheus: “Aborting. Subject agitated.”
+        <<fade_in Backgrounds 1>>
+        <<load_scene Backend 3>>
+    -> Your card is on the desk and no red, remember.
+        <<show_character Backend 1 Dealer>>
+        Cameron: “Oh yeah. Thanks for the reminder. Can’t get the boss mad. We got a break coming up for us soon and don’t want to mess that up.”
+        <<jump Dealer_Dialogue_4>>
+    -> Say nothing.
+        The scene shifts to a nightclub and there McKinnon and Smith party, but nothing of note was learned.
+        <<load_scene Backend 3>>
+===
+title: Deal_Scene
+position: 426,15
+---
+<<show_character Backend 3 Dealer_2>>
+Mike: “Cameron, my man!”
+<<show_character Backend 1 Dealer>>
+Cameron: “How you doing, Mikey? You ready?”
+<<show_character Backend 3 Dealer_2>>
+Mike: “Hell yeah, man. You got the money, right?”
+<<show_character Backend 1 Dealer>>
+Cameron: “Of course I do.”
+Mike looks over at McKinnon.
+<<show_character Backend 3 Dealer_2>>
+Mike: “Why you bring the girl here? You know it ain’t safe.”
+
+===
+title: Dealer_Dialogue_4
+position: 161,160
+---
+<<show_character Backend 0 empty>>
+McKinnon: “A break?”
+<<show_character Backend 1 Dealer>>
+Cameron: “Yeah, I didn’t tell, you huh? Ol’ Mike is going to hook us up with something. I got a deal coming up and it can take us to big leagues. It’s our chance, babe.”
+<<show_character Backend 0 Morpheus>>
+Morpheus: “Memory triggered.”
+<<fade_in Backgrounds 1>>
+<<activate_set Sets 1>>
+<<change_background Backgrounds Alleyway>>
+<<show_character Backend 0 empty>>
+===

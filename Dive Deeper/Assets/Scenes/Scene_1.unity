@@ -1677,6 +1677,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1332497306
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1332497308}
+  - component: {fileID: 1332497307}
+  m_Layer: 0
+  m_Name: Sets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1332497307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332497306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08dde3c6153db204f8d2f0d8d2bf4ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sets: []
+--- !u!4 &1332497308
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332497306}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.1964363, y: -0.021971643, z: 0.010343339}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1428885269
 GameObject:
   m_ObjectHideFlags: 0
@@ -1724,7 +1769,6 @@ GameObject:
   - component: {fileID: 1471367907}
   - component: {fileID: 1471367906}
   - component: {fileID: 1471367905}
-  - component: {fileID: 1471367904}
   m_Layer: 0
   m_Name: Backend
   m_TagString: Untagged
@@ -1732,20 +1776,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1471367904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1471367903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08dde3c6153db204f8d2f0d8d2bf4ae0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sets:
-  - interactableObjects: []
 --- !u!114 &1471367905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1809,6 +1839,12 @@ MonoBehaviour:
     source: {fileID: 0}
   - audioClip: {fileID: 8300000, guid: 2e811ceaa257f274e9553347f1749016, type: 3}
     soundName: Suspicion
+    soundVol: 0.8
+    soundPitch: 1
+    isLooping: 1
+    source: {fileID: 0}
+  - audioClip: {fileID: 8300000, guid: 2e811ceaa257f274e9553347f1749016, type: 3}
+    soundName: Dealer_Room
     soundVol: 0.8
     soundPitch: 1
     isLooping: 1
@@ -2192,6 +2228,8 @@ MonoBehaviour:
     bgName: Office_2
   - bgSprite: {fileID: 21300000, guid: 44dc0ec363eeac14396fe1fab5ab873d, type: 3}
     bgName: Interrogation
+  - bgSprite: {fileID: 21300000, guid: f20a8e94f87bc544692a1d850be5af8c, type: 3}
+    bgName: Bedroom
   spriteRenderer: {fileID: 1894816902}
   backgroundRenderer: {fileID: 189006463}
 --- !u!4 &1894816904

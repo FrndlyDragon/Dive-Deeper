@@ -102,5 +102,6 @@ McKinnon puts the helmet on and sits back in his seat. He takes a deep breath.
 McKinnon: “I’m ready.”
 <<show_character Backend 1 Morpheus>>
 Morpheus: “Good luck detective. Entering Cameron Smith. Date, January 12th.”
+<<fade_in Backgrounds 1>>
 <<load_scene Backend 2>>
 ===
