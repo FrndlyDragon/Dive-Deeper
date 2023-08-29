@@ -2,6 +2,7 @@
 tags:
 position: -121,14
 ---
+<<activate_set Sets 0>>
 The dealer gets up from his nap and looks around groggily. He locks onto McKinnon and gives him a lazy grin.
 <<show_character Backend 1 Dealer>>
 Cameron Smith: “Hey, Katie. What time is it?”
@@ -36,9 +37,7 @@ Cameron Smith: “Did I get any messages, Katie?”
         Cameron: “Is everything alright, Katie? You aren’t acting normal. Did something happen or… ”
         Cameron: “Well, there’s a text. There’s a thing at 11. I need to get ready.”
         <<jump Dealer_Dialogue_3>>
-
-    <<if $dealer_friend == true>>
-    -> Mike sent you a reminder.
+    -> Mike sent you a reminder. <<if $dealer_friend is true>>
         <<show_character Backend 1 Dealer>>
         Cameron: “Did he say anything else? I got another thing coming up and he said he’ll tell me.”
         <<show_character Backend 0 empty>>
@@ -51,14 +50,10 @@ Cameron Smith: “Did I get any messages, Katie?”
         <<activate_set Sets 1>>
         <<change_background Backgrounds Alleyway>>
         <<show_character Backend 0 empty>>
-    <<endif>>
-
-    <<if $dealer_phone == true>>
-    -> You got a message about the thing at 11. 
+    -> You got a message about the thing at 11. <<if $dealer_phone is true>>
         <<show_character Backend 1 Dealer>>
         Cameron: “Oh, that’s all? Alright. I guess I’ll start getting ready.”
         <<jump Dealer_Dialogue_3>>
-    <<endif>>
 ===
 title: Dealer_Dialogue_3
 position: 160,12
@@ -73,7 +68,7 @@ position: 160,12
         Morpheus: “Aborting. Subject agitated.”
         <<fade_in Backgrounds 1>>
         <<load_scene Backend 3>>
-    -> Your card is on the desk and no red, remember.
+    -> Your card is on the desk and no red, remember. <<if $dealer_note is true>>
         <<show_character Backend 1 Dealer>>
         Cameron: “Oh yeah. Thanks for the reminder. Can’t get the boss mad. We got a break coming up for us soon and don’t want to mess that up.”
         <<jump Dealer_Dialogue_4>>
@@ -95,7 +90,41 @@ Cameron: “Of course I do.”
 Mike looks over at McKinnon.
 <<show_character Backend 3 Dealer_2>>
 Mike: “Why you bring the girl here? You know it ain’t safe.”
+<<show_character Backend 0 empty>>
+    -> I’m his girlfriend. He needs me. You know how he is.
+    -> I’m his friend. He needs me. You know how he is.
+        <<set $strikes += 1>>
+    -> He just asked me to come along. 
+        <<set $strikes += 1>>
 
+<<if $strikes is 3>>
+    <<show_character Backend 1 Dealer>>
+    Cameron: "Something seems off with you today, Katie. Is something wrong?"
+    <<show_character Backend 0 Morpheus>>
+    Morpheus: "Subject agitated. Aborting."
+    <<load_scene Backend 3>>
+<<endif>>
+
+<<show_character Backend 1 Dealer>>
+Cameron: “You know how it is, Mike. She remembers more of my life than I do.”
+<<show_character Backend 3 Dealer_2>>
+Mike: “Alright, but I don’t know if they’re going to like it.”
+<<show_character Backend 1 Dealer>>
+Cameron: “Who are we meeting with again?”
+<<show_character Backend 3 Dealer_2>>
+Mike: “I told you before.”
+<<show_character Backend 1 Dealer>>
+Cameron: “No, I mean the person. The meeting place is somewhere else. We gotta know who to look for.”
+<<show_character Backend 3 Dealer_2>>
+Mike: “Uh, I don’t remember if I ever got a name.”
+The two look at McKinnon with hope in their eyes, but that particular piece of information was out of his grasp. 
+<<show_character Backend 0 empty>>
+McKinnon: “Morpheus, pause.”
+<<show_character Backend 0 Morpheus>>
+Morpheus: “Understood. Exiting.”
+<<fade_in Backgrounds 1>>
+<<stop_sound Backend Dealer_Room>>
+<<load_scene Backend 4>>
 ===
 title: Dealer_Dialogue_4
 position: 161,160

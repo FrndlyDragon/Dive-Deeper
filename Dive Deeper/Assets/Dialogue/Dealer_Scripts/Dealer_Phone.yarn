@@ -4,27 +4,27 @@ position: -276,9
 ---
 <<set $dealer_phone to true>>
 The phone scans McKinnon’s face and opens up, a text appearing. It reads, “Remember, 11 tonight. Don’t make me get yo ass again.” The text was from two hours ago.
-<<jump Choice>>
+<<jump Phone_Choice>>
 ===
 title: Phone_Sender
 position: 248,-75
 ---
 The text is from Mike Perez.
 <<set $dealer_friend to true>>
-<<jump Choice>>
+<<jump Phone_Choice>>
 ===
 title: Phone_Time
 position: 247,90
 ---
 :Sent at 5:49 PM.
-<<jump Choice>>
+<<jump Phone_Choice>>
 ===
 title: Phone_Choice
 position: -31,9
 ---
 -> Look at sender
-    <<jump Sender>>
+    <<jump Phone_Sender>>
 -> Look at time
-    <<jump Time>>
+    <<jump Phone_Time>>
 -> Close
 ===

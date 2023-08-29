@@ -4,10 +4,4 @@ position: -125,-9
 ---
 <<set $dealer_note to true>>
 On the paper is a hastily scratched note. It reads, “Bring card and no purple.” Below it is another note, this one written in a neat and orderly way. “Card is on your desk and the boss doesn’t like red.”
-<<jump Note_Choices>>
-===
-title: Note_Choices
-position: 146,-3
----
--> Leave
 ===

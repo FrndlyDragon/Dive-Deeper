@@ -6,5 +6,11 @@ tags:
 <<change_background Backgrounds Bedroom>>
 <<fade_out Backgrounds 1 >>
 When the darkness abates, Detective McKinnon finds himself in a neglected apartment, bottles of booze strewn about. He looks down and sees his body, now in a feminine form and dressed in a bright dress. The skirt was cut short and the neckline plunged straight down. The drug dealer, Cameron Smith, was frozen on the ground, arms splayed and eyes shut.
-<<activate_set Sets 0>>
+<<activate_set Sets 1>>
+<<declare $dealer_phone = false>>
+<<declare $dealer_friend = false>>
+<<declare $dealer_note = false>>
+<<declare $dealer_graffiti = false>>
+<<declare $dealer_computer = false>>
+<<declare $strikes = 0>>
 ===
