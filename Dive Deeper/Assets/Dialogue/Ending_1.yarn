@@ -1,5 +1,35 @@
-﻿title: Ending_1
+title: Ending_1
 tags:
 ---
-
+<<play_sound Backend Ending_1 true>>
+<<fade_out Backgrounds 1>>
+<<show_character Backend 1 Morpheus>>
+Morpheus: "I apologize, detective, but keeping you in the dream would have been unsafe."
+<<show_character Backend 0 McKinnon>>
+McKinnon: "I understand. It's not your fault."
+He sighs and sits up, staring up at the ceiling. The investigation would have to be put on pause now. With the rest needed before another attempt could be made, all McKinnon can do is wait.
+He leaves the room and Hamon is still there, working on whatever is on his monitor. McKinnon's approach draws Hamon's attention. A look of understanding passes through him.
+<<show_character Backend 1 Hamon>>
+Hamon: "No luck?"
+<<show_character Backend 0 McKinnon>>
+McKinnon: "Made a mistake."
+<<show_character Backend 1 Hamon>>
+Hamon: "Can't go back in?"
+<<show_character Backend 0 McKinnon>>
+McKinnon shakes his head.
+<<show_character Backend 1 Hamon>>
+Hamon: "Ah, that's not good. What's the plan now, McKinnon?"
+<<show_character Backend 0 McKinnon>>
+McKinnon: "I'll have to just try again tomorrow. I know where I went wrong. I just need another chance."
+<<show_character Backend 1 Hamon>>
+Hamon: "Well, not much you can do about it. We still got the day ahead of us so put it aside for now. We might have some work ahead of us."
+<<show_character Backend 0 McKinnon>>
+McKinnon: "I understand, sir. What's on the schedule today?"
+<<show_character Backend 1 Hamon>>
+Hamon laughs.
+Hamon: "Nothing. It's a normal day. Just relax a bit and if a report comes that needs a response, then we'll do what we do."
+<<show_character Backend 0 McKinnon>>
+McKinnon: "Alright, sir."
+<<fade_out Backgrounds 1>>
+<<show_character Backend 1 empty>>
 ===
