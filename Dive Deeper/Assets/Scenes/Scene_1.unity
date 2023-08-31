@@ -1831,7 +1831,7 @@ MonoBehaviour:
     soundPitch: 1
     isLooping: 0
     source: {fileID: 0}
-  - audioClip: {fileID: 8300000, guid: a32f0791d1081724b891dc146b407470, type: 3}
+  - audioClip: {fileID: 8300000, guid: d8bf6d97c4cbd31478c133be0c3a2b01, type: 3}
     soundName: Interrogation_Room
     soundVol: 0.8
     soundPitch: 1
@@ -1843,8 +1843,14 @@ MonoBehaviour:
     soundPitch: 1
     isLooping: 1
     source: {fileID: 0}
-  - audioClip: {fileID: 8300000, guid: 2e811ceaa257f274e9553347f1749016, type: 3}
+  - audioClip: {fileID: 8300000, guid: 9add83a71497bb8488c3d784d04e8345, type: 3}
     soundName: Dealer_Room
+    soundVol: 0.8
+    soundPitch: 1
+    isLooping: 1
+    source: {fileID: 0}
+  - audioClip: {fileID: 8300000, guid: 6709778fc8c03284a8f673d2878579ce, type: 3}
+    soundName: Space_Calm_2
     soundVol: 0.8
     soundPitch: 1
     isLooping: 1

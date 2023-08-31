@@ -1,0 +1,69 @@
+﻿title: Scene_3
+tags:
+---
+<<change_background Backgrounds Interrogation>>
+<<play_sound Backend Interrogation_Room true>>
+<<fade_out Backgrounds 1>>
+<<show_character Backend 1 Morpheus>>
+Morpheus: “Welcome back, detective. Your position will be held for three days. Any longer would require permission and a medical professional to prevent long term mental damage.”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “Thank you, Morpheus.”
+<<show_character Backend 1 empty>>
+<<stop_sound Backend Interrogation_Room>>
+<<fade_in Background 1>>
+McKinnon leaves the room and sees Detective Hamon in the office, feet kicked up as he leaned back in his chair with a mug of coffee. Hamon looks over at him and gets to his feet.
+<<change_background Backgrounds Office>>
+<<play_sound Backend Space_Calm_2 true>>
+<<fade_out Background 1>>
+<<show_character Backend 1 Hamon>>
+Hamon: “Any luck, McKinnon?”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “A little roadblock, but I have an idea where I can get a key around it, sir. Do we have anyone from the Steel Rippers booked? Preferably someone higher up their order.”
+<<show_character Backend 1 Hamon>>
+Hamon: “Steel Rippers? Of course. We got a lot of them. Some might be local. I can do a quick check for you.”
+<<show_character Backend 3 empty>>
+Hamon goes to the computer and types for a bit, grunting to himself. Then, with a flourish, he hits enter.
+<<show_character Backend 1 Hamon>>
+Hamon: “There you go, McKinnon. One Steel Ripper coming right up. Former left hand at that. She’ll be here in a few hours.”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “That fast? Don’t we need to fill out some papers?”
+<<show_character Backend 1 Hamon>>
+Hamon: “Twenty years, McKinnon. I know people and they know me. This isn’t exactly in the books, so, uh, wrap this up as quickly as you can, alright?”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “I’ll do my best, sir.”
+<<show_character Backend 1 Hamon>>
+Hamon: “Good. In the meantime, heard there’s a big mech match today. Down to watch?”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “Sure. Do you have a subscription?”
+<<show_character Backend 1 Hamon>>
+Hamon: “Veteran perks, McKinnon.”
+<<fade_in Backgrounds 1>>
+The hours pass and the two watch the match, Hamon especially engrossed. Half the entertainment for McKinnon was Hamon’s reactions to every solid hit and explosion. Their fun was interrupted by an approaching car and a ring.
+<<fade_out Backgrounds 1>>
+<<show_character Backend 1 Hamon>>
+Hamon: “Ah, that’s the package. Want to finish the match or duty calls?”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “I have to work, sir. It’s been fun though.”
+<<show_character Backend 1 Hamon>>
+Hamon: “No worries, McKinnon. Good luck.”
+<<show_character Backend 1 empty>>
+<<fade_in Backgrounds 1>>
+<<stop_sound Backend Space_Calm_2>>
+The imprisoned gang member was set up in the detainment room next to the drug dealer. Everything was connected, ready for a dream delve.
+<<play_sound Backend Interrogation_Room true>>
+<<fade_out Backgrounds 1>>
+<<show_character Backend 1 Morpheus>>
+Morpheus: “Welcome back, detective. I assume the next target is this woman?”
+<<show_character Backend 0 McKinnon>>
+Detective McKinnon voiced in the affirmative as he hooked himself up to the machine. 
+<<show_character Backend 1 Morpheus>>
+Morpheus: “Subject’s name is Vera Fendley. Records show that the subject was captured two years ago on charges of murder and tax evasion and sentenced to life. Given the timeframe, lucidity has gone below optimal levels.”
+Morpheus: “Be forewarned that there may be artifacts and intrusions during your trip. Do avoid mentioning them or your trip will be in jeopardy.”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “Understood. I’m ready, Morpheus.”
+<<show_character Backend 1 Morpheus>>
+Morpheus: “Good luck, detective. Entering Vera Fendley. Data, January 12th.”
+<<fade_in Background 1>>
+<<stop_sound Backend Interrogation_Room>>
+<<load_scene Backend 5>>
+===
