@@ -31,10 +31,9 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(gameObject);
-        SceneManager.sceneLoaded += UpdateScene;
     }
 
-    public void UpdateScene(Scene s, LoadSceneMode mode) {
+    public void UpdateScene() {
         sceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
 
@@ -45,6 +44,7 @@ public class GameManager : MonoBehaviour
 
     [YarnCommand("load_scene")]
     public void LoadScene(int sceneIndex) {
+        UpdateScene();
         SceneManager.LoadScene(sceneIndex);
     }
 }

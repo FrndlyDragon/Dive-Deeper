@@ -1795,7 +1795,7 @@ MonoBehaviour:
   - {fileID: 1331186061}
   characters:
   - characterName: Hamon
-    characterSprite: {fileID: -582919661, guid: a822ef2b23d214647ae9ddd0b1f29e44, type: 3}
+    characterSprite: {fileID: 167248927, guid: e0efcdac1724caf4fafe37336886a17c, type: 3}
   - characterName: McKinnon
     characterSprite: {fileID: -1571429688, guid: a822ef2b23d214647ae9ddd0b1f29e44, type: 3}
   - characterName: empty

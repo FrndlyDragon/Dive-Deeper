@@ -30,6 +30,40 @@ Hamon laughs.
 Hamon: "Nothing. It's a normal day. Just relax a bit and if a report comes that needs a response, then we'll do what we do."
 <<show_character Backend 0 McKinnon>>
 McKinnon: "Alright, sir."
-<<fade_out Backgrounds 1>>
+<<fade_in Backgrounds 1>>
 <<show_character Backend 1 empty>>
+<<stop_sound Backened Ending_1>>
+McKinnon goes home for the day and after a releasing bit of frustration and worry, he goes to sleep and returns to the office the next day.
+<<fade_out Backgrounds 1>>
+<<play_sound Backend Ending_1 true>>
+<<show_character Backend 1 Hamon>>
+Hamon: "Bad news, McKinnon."
+<<show_character Backend 0 McKinnon>>
+McKinnon: "What do you mean, sir?"
+<<show_character Backend 1 Hamon>>
+Hamon: "HQ came earlier than you. Hell, even earlier than me. Investigation is over. The room's empty now."
+<<show_character Backend 0 McKinnon>>
+McKinnon: "What? How?"
+<<show_character Backend 1 Hamon>>
+Hamon: "They must not want you to investigate. I've never seen them work so fast. There's not much we can do about it."
+<<show_character Backend 0 McKinnon>>
+McKinnon: "I don't suppose asking will do anything, either."
+<<show_character Backend 1 Hamon>>
+Hamon: "Not at all."
+<<show_character Backend 0 McKinnon>>
+He sighs. A chance now gone just like that. 
+McKinnon: "Is there anything we can do?"
+<<show_character Backend 1 Hamon>>
+Hamon: "No. In my honest opinion, kid, the only chance is if we catch another deal. Besides that, our current leads are dead in the water."
+<<show_character Backend 0 McKinnon>>
+That is what McKinnon was afraid of. 
+McKinnon: "Well, I guess that we can just wait."
+<<show_character Backend 1 Hamon>>
+Hamon: "I'm sorry, McKinnon. I wish there was something that could be done."
+<<show_character Backend 0 McKinnon>>
+McKinnon: "It's not your fault, sir. Come on, let's get back to work."
+<<fade_in Backgrounds 1>>
+From then, McKinnon continues his career as a Outer District detective. When Hamon inevitably retires, McKinnon takes his place as head detective and has a eventful and fruitful life.
+But there is that gnawing that eats at him at every stage of his life. A little thorn in the back of his mind that asked "what if", but it is a question that he will never be able to answer.
+<<load_last_scene Backend>>
 ===
