@@ -811,7 +811,7 @@ MonoBehaviour:
     bgName: Office_2
   - bgSprite: {fileID: 21300000, guid: 44dc0ec363eeac14396fe1fab5ab873d, type: 3}
     bgName: Interrogation
-  - bgSprite: {fileID: 21300000, guid: f20a8e94f87bc544692a1d850be5af8c, type: 3}
+  - bgSprite: {fileID: 21300000, guid: f556964bb8774e64781e8ed08889b266, type: 3}
     bgName: Bedroom
   spriteRenderer: {fileID: 755247039}
   backgroundRenderer: {fileID: 745678705}

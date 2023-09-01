@@ -9,6 +9,7 @@
     "**/*.yarn",
     "**/*.yarn",
     "**/*.yarn",
+    "**/*.yarn",
     "**/*.yarn"
   ],
   "excludeFiles": [],

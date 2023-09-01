@@ -1,6 +1,8 @@
 ﻿title: Scene_2
 tags:
 ---
+<<show_character Backend 0 empty>>
+<<show_character Backend 1 empty>>
 <<stop_sound Backend Interrogation_Room>>
 <<play_sound Backend Dealer_Room true>>
 <<change_background Backgrounds Bedroom>>
