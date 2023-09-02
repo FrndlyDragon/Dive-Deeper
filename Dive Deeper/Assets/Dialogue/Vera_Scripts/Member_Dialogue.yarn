@@ -1,5 +1,98 @@
 ﻿title: Member_Dialogue
 tags:
+position: -47,-34
 ---
-
+<<activate_set Sets 0>>
+<<show_character Backend 1 Vera>>
+Vera: “—risky. Are you sure about this?”
+<<show_character Backend 0 Empty>>
+-> Show her the briefcase <<if $briefcase_open is true>>
+    <<show_character Backend 1 Vera>>
+    Vera: “I know. They look real to me, but there’s always a catch. The money is good, but I know we don’t need it. I hope you know what you’re doing. What’s my role in this?”
+    <<show_character Backend 0 Empty>>
+     “Handle the deals. I’ll handle talking.”
+    <<show_character Backend 1 Vera>>
+    Vera: “Alright, boss. I’ll get my people organized.”
+    <<show_character Backend 1 Morpheus>>
+    Morpheus: “Memory triggered.”
+    <<fade_in Backgrounds 1>>
+    <<jump Member_Deal>>
+-> Mention the drawing <<if $member_drawing is true>>
+    <<show_character Backend 1 Vera>>
+    Vera: “Drawing?”
+    She looks around in confusion before seeing the paper. Shock fills her face.
+    Vera: “Where am I?”
+    <<show_character Backend 1 Morpheus>>
+    Morpheus: "Subject agitated. Aborting."
+    <<fade_in Backgrounds 1>>
+    <<stop_sound Backend Vera>>
+    <<load_scene Backend 3>>
+-> “Of course I am. I wouldn’t be here if I wasn’t.” 
+    <<set $strikes += 1>>
+    <<show_character Backend 1 Vera>>
+    Vera: “If you say so. What’s in it for us?”
+<<jump Member_Dialogue_2>>
+===
+title: Member_Deal
+position: 303,16
+---
+<<change_background Backgrounds Alleyway>>
+<<show_character Backend 0 empty>>
+<<show_character Backend 1 empty>>
+<<fade_out Backgrounds 1>>
+McKinnon is now outside in an alleyway. Vera is there along with another person, a thin man dressed in street clothes. 
+The two are in front of McKinnon and frozen in conversation, a briefcase in the hands of the man. The detective looks down at his body and finds a bare chest and a gun holstered at his side. Tattoos adorn his body.
+<<activate_set Sets 2>>
+===
+title: Member_Dialogue_2
+position: 169,-193
+---
+<<show_character Backend 0 Empty>>
+-> Show her the gun <<if $member_gun is true>>
+    <<show_character Backend 1 Vera>>
+    Vera: “I see. Are you sure? I know we talked a lot about it, but actually going to war is something else.”
+    <<show_character Backend 0 Empty>>
+    “I know. I have to.”
+    <<show_character Backend 1 Vera>>
+    Vera: “Alright, boss. You know I’ll be there for you. I’ll get the guys ready.”
+    <<show_character Backend 1 Morpheus>>
+    Morpheus: “Memory Triggered.”
+    <<fade_in Backgrounds 1>>
+    <<jump Member_Deal>>
+-> “A chance.”
+    <<show_character Backend 1 Vera>>
+    Vera: “I hope you know what you’re doing boss.”
+-> “There’s money here. A lot of it and we can use that.”
+    <<set $strikes += 1>>
+    <<show_character Backend 1 Vera>>
+    She frowns.
+    Vera: “If that’s why, we have lots of it already. No need to risk our guys for this.”
+<<jump Member_Dialogue_3>>
+===
+title: Member_Dialogue_3
+position: 492,-196
+---
+<<show_character Backend 0 Empty>>
+-> “It’ll be worth the risk. I just need you to back me up.”
+    <<set $strikes += 1>>
+    <<if $strikes == 3>>
+        <<show_character Backend 1 Vera>>
+        Vera: “Is something wrong boss? You’ve been talking a lot. Did you do something with your throat?”
+        <<show_character Backend 1 Morpheus>>
+        Morpheus: “Aborting. Subject agitated.”
+        <<load_scene Backend 3>>
+    <<endif>>
+    <<show_character Backend 1 Vera>>
+    Vera: “Alright. This better be worth it. I’ll get my people ready.”
+    <<show_character Backend 1 Morpheus>>
+    Morpheus: “Memory triggered.”
+    <<fade_in Backgrounds 1>>
+    <<jump Member_Deal>>
+-> “It’s necessary.”
+    <<show_character Backend 1 Vera>>
+    Vera: “I guess it had to happen one day. Whenever you’re ready, I’ll be there.”
+    <<show_character Backend 1 Morpheus>>
+    Morpheus: “Memory triggered.”
+    <<fade_in Backgrounds 1>>
+    <<jump Member_Deal>>
 ===

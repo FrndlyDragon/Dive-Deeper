@@ -50,6 +50,7 @@ Cameron Smith: “Did I get any messages, Katie?”
         <<activate_set Sets 1>>
         <<change_background Backgrounds Alleyway>>
         <<show_character Backend 0 empty>>
+        <<jump Deal_Scene>>
     -> You got a message about the thing at 11. <<if $dealer_phone is true>>
         <<show_character Backend 1 Dealer>>
         Cameron: “Oh, that’s all? Alright. I guess I’ll start getting ready.”
@@ -79,6 +80,7 @@ position: 160,12
 title: Deal_Scene
 position: 426,15
 ---
+<<fade_out Background 1>>
 <<show_character Backend 3 Dealer_2>>
 Mike: “Cameron, my man!”
 <<show_character Backend 1 Dealer>>
@@ -96,7 +98,6 @@ Mike: “Why you bring the girl here? You know it ain’t safe.”
         <<set $strikes += 1>>
     -> He just asked me to come along. 
         <<set $strikes += 1>>
-
 <<if $strikes is 3>>
     <<show_character Backend 1 Dealer>>
     Cameron: "Something seems off with you today, Katie. Is something wrong?"
@@ -139,4 +140,5 @@ Morpheus: “Memory triggered.”
 <<activate_set Sets 1>>
 <<change_background Backgrounds Alleyway>>
 <<show_character Backend 0 empty>>
+<<jump Deal_Scene>>
 ===
