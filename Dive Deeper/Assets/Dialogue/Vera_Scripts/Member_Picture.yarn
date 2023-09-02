@@ -1,0 +1,14 @@
+﻿title: Member_Picture
+tags:
+---
+A drawing of a crude cat. It looks to be done by a child. The colors are vibrant and look fresh.
+<<set $member_drawing to true>>
+<<jump Member_Picture_Choice>>
+===
+title: Member_Picture_Choice
+position: 264,0
+---
+-> Flip over
+    On the back is scribbled “Vera, 6”.
+-> Put away
+===

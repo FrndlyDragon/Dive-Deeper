@@ -1,0 +1,14 @@
+﻿title: Member_Briefcase
+tags:
+---
+A metal briefcase. It appears to be unlocked and is laid flat on the ground. The surface is polished and without any blemishes of any kind.
+<<jump Member_Briefcase_Choice>>
+===
+title: Member_Briefcase_Choice
+position: 219,0
+---
+-> Look inside
+    Within the case are vials attached to syringes. Given the nature of the investigation, one can only assume they were nano stimulants.
+    <<set $briefcase_open to true>>
+-> Leave alone
+===

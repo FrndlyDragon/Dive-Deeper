@@ -1,0 +1,16 @@
+﻿title: Scene_4
+tags:
+---
+<<change_background Backgrounds Bedroom>>
+<<play_sound Backend Vera true>>
+<<show_character Backend 0 empty>>
+<<show_character Backend 1 empty>>
+<<fade_out Backgrounds 1>>
+The place that McKinnon awakes in is a bedroom. On the bed is Vera herself, frozen in midspeech. At her feet is a napping cat, curled around her ankles. 
+McKinnon found himself seated in a chair facing Vera. He is in a well ironed suit that is struggling against the muscular physique it contains.
+<<activate_set Sets 1>>
+<<declare $member_drawing to false>>
+<<declare $member_gun to false>>
+<<declare $briefcase_open to false>>
+<<set $strikes = 0>>
+===

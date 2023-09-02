@@ -1,0 +1,6 @@
+﻿title: Member_Gun
+tags:
+---
+A Blue Forge handgun. An expensive piece of equipment often only in the hands of the bodyguards of rich men or military.
+<<set $member_gun to true>>
+===
