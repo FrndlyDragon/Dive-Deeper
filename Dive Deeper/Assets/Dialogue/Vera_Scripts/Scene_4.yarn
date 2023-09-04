@@ -12,5 +12,6 @@ McKinnon found himself seated in a chair facing Vera. He is in a well ironed sui
 <<declare $member_drawing to false>>
 <<declare $member_gun to false>>
 <<declare $briefcase_open to false>>
+<<declare $member_rag to false>>
 <<set $strikes = 0>>
 ===

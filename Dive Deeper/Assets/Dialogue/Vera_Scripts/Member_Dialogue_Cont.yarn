@@ -1,5 +1,59 @@
 ﻿title: Member_Dialogue_Cont
 tags:
+position: -107,0
 ---
-
+<<activate_set Sets 0>>
+<<show_character Backend 1 Vera>>
+Vera: “The boss is relying on us. Don’t fuck this up. I’m letting you handle these for now because I got a few things I need to attend to. Got it?”
+<<show_character Backend 0 Joseph>>
+Man: “Don’t worry, V. I got this. Been running my whole life. Besides, I got Darrell here with me, don’t I bud?”
+<<show_character Backend 2 empty>>
+-> “I’ll make sure things go smooth, V.”
+    <<show_character Backend 0 Joseph>>
+    Man: “There, you see, V? It’ll be alright.”
+    <<jump Member_Dialogue_Cont_2>>
+-> “You sure about this?”
+    <<set $strikes += 1>>
+    <<show_character Backend 0 Joseph>>
+    Man: “Come on, Darrell. Just back me up.”
+<<if $strikes is 3>>
+    <<show_character Backend 1 Vera>>
+    Vera: “Something isn’t right.”
+    <<show_character Backend 0 Morpheus>>
+    Morpheus: "Subject agitated. Aborting."
+    <<fade_in Backgrounds 1>>
+    <<stop_sound Backend Vera>>
+    <<load_scene Backend 3>>
+<<endif>>
+<<jump Member_Dialogue_Cont_2>>
+===
+title: Member_Dialogue_Cont_2
+position: 148,0
+---
+<<show_character Backend 1 Vera>>
+She turns to look at McKinnon.
+Vera: “You better. I don’t want to see either of your mugs on screen. Got it?”
+<<show_character Backend 0 Joseph>>
+Man: “Yes, ma’am.”
+<<show_character Backend 2 empty>>
+-> “You got it.”
+    <<show_character Backend 1 Vera>>
+    Vera: “Good. Joseph, Darrell. I expect to see both of you back by 5. Don’t disappoint me.”
+    <<show_character Backend 0 McKinnon>>
+    McKinnon: “Morpheus, pause.”
+    <<show_character Backend 1 Morpheus>>
+    Morpheus: "Understood. Exiting."
+    <<fade_in Backgrounds 1>>
+    <<stop_sound Backend Vera>>
+    <<load_scene Backend 6>>
+-> “What’s that rag doing there?” <<if $member_rag is true>>
+    <<show_character Backend 1 Vera>>
+    Vera: “Rag? What rag?”
+    She looks and finds it in the corner, grief flashing in her eyes. She holds her head, shaking.
+    Vera: “No, no, this is wrong. This is all wrong.”
+    <<show_character Backend 0 Morpheus>>
+    Morpheus: "Subject agitated. Aborting."
+    <<fade_in Backgrounds 1>>
+    <<stop_sound Backend Vera>>
+    <<load_scene Backend 3>>
 ===

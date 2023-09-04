@@ -1,5 +1,6 @@
 ﻿title: Member_Rag
 tags:
 ---
-
+A piece of ripped cloth. It’s soaked through with fresh blood that pools around it, its source, nowhere to be seen.
+<<set $member_rag to true>>
 ===

@@ -1,0 +1,108 @@
+﻿title: Scene_5
+tags:
+---
+<<change_background Backgrounds Interrogation>>
+<<play_sound Backend Interrogation_Room true>>
+<<fade_out Backgrounds 1>>
+<<show_character Backend 1 Morpheus>>
+Morpheus: “Welcome back, detective. Was your trip useful?”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “I think so. Can you connect me to Cameron Smith again?”
+<<show_character Backend 1 Morpheus>>
+Morpheus: “Of course. Remember that since Smith is paused, resuming will cause no damage. However, in future cases, should you forget, there is a one day rest period.”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “I know, Morpheus. Just send me under.”
+<<show_character Backend 1 Morpheus>>
+Morpheus: “Understood. Good luck, detective. Entering Cameron Smith. Date, January 12th.”
+<<fade_in Backgrounds 1>>
+<<stop_sound Backend Interrogation>>
+<<show_character Backend 0 empty>>
+<<show_character Backend 1 empty>>
+<<change_background Backgrounds Alleyway>>
+<<play_sound Backend Dealer_Room true>>
+<<fade_out Backgrounds 1>>
+McKinnon returns to the meeting with Mike, him and Cameron looking at the detective expectantly. 
+McKinnon: “Joseph.”
+<<show_character Backend 1 Dealer_2>>
+Mike hits himself on the head and groans.
+Mike: “Yeah, Joseph Maylar or something. I knew it started with a J. My bad. That’s the guy.”
+<<show_character Backend 0 Dealer>>
+Cameron: “Is it just him?”
+<<show_character Backend 1 Dealer_2>>
+Mike: “Nah, he’s got a guy with him, but don’t worry about it. Security and all. Makes it more legit, you know?”
+<<show_character Backend 0 Dealer>>
+Cameron: “If you say so, man. Let’s get this thing over with. I don’t feel safe out here.”
+<<show_character Backend 1 Morpheus>>
+Morpheus: “Memory triggered.”
+<<fade_in Backgrounds 1>>
+<<show_character Backend 3 Darrell>>
+<<show_character Backend 1 Joseph>>
+<<fade_out Backgrounds 1>>
+Joseph: “Hello, my friends. Good to see you can make it.”
+<<show_character Backend 2 empty>>
+McKinnon recognizes the voice and face. The man is the same person that McKinnon saw in Vera’s dream. He is dressed a bit differently here, still in street clothes. The man beside him is Darrell who sports a disgruntled look, gun at his side.
+<<show_character Backend 1 Joseph>>
+Joseph: “Ah, who is this lovely lady here? You didn’t mention bringing a woman?”
+<<show_character Backend 0 Dealer>>
+Cameron: “Katie’s my girl. We work together.”
+<<show_character Backend 1 Joseph>>
+Joseph: “I see. Well, as long as you trust her, it isn’t my problem. Let’s get straight to the point. A thousand creds per. I have twenty in this briefcase. I would let you test the product, but it’s valuable so it won’t be for free.”
+<<show_character Backend 0 Dealer_2>>
+Mike: “No need. Seen that thing first hand. Asked where he got it, pointed me to you.”
+<<show_character Backend 1 Joseph>>
+Joseph: “Good. Then I take it we have a deal?”
+<<show_character Backend 2 empty>>
+Mike looked over at Cameron who looked at McKinnon. The detective nodded.
+<<show_character Backend 1 Joseph>>
+Joseph: “Ah, I should have asked the lady then. Miss Katie, do you have the credits?”
+<<show_character Backend 2 empty>>
+McKinnon: “Cameron has the card.”
+<<show_character Backend 1 Joseph>>
+Joseph: “I’ll put the case on the ground. Darrell, can you handle the credits?”
+<<show_character Backend 3 Darrell>>
+Darrell: “Sure.”
+The muscle walked up to Cameron and put his hand out. Cameron held out the card and tapped it against the man’s wrist. Joseph pulled up a screen and waited before giving a satisfied nod.
+<<show_character Backend 1 Joseph>>
+Joseph: “Money’s here. The case is yours.”
+<<show_character Backend 0 Dealer_2>>
+Mike: “I’ll get it.”
+Mike crouches down to look in the case, examining the contents. McKinnon could see syringes filled with some fluid.
+<<show_character Backend 0 Dealer>>
+Cameron: “Joseph, right?”
+<<show_character Backend 1 Joseph>>
+Joseph: “Yes, that’s me. You have a question?”
+<<show_character Backend 0 Dealer>>
+Cameron: “Yeah, just curious. Where did you get these? They aren’t something you just pick up from Quadrant 4.”
+<<show_character Backend 1 Joseph>>
+Joseph: “We got a source. We got the source. See what Darrell has on his waist over there?”
+<<show_character Backend 0 Dealer>>
+Cameron: “The sparker? Yeah.”
+<<show_character Backend 1 Joseph>>
+Joseph: “Blue Forge. Model 9. Military. Trust me, these are the real deal.”
+<<show_character Backend 2 empty>>
+McKinnon: “You have a government contact?”
+<<show_character Backend 1 Joseph>>
+He smiles.
+Joseph: “Where else will we get these things?”
+<<show_character Backend 2 empty>>
+McKinnon: “Have you met this person?”
+<<show_character Backend 1 Joseph>>
+Joseph: “Curious? Me too. Sadly, we never get to see them and you won’t either. They only meet with my boss and my boss’s boss. I just handle the deals.”
+<<show_character Backend 0 Dealer_2>>
+Mike comes back to Cameron’s side, briefcase in hand.
+Mike: “Everything looks good. Thanks for the stuff, Joseph.”
+<<show_character Backend 1 Joseph>>
+Joseph: “Always a pleasure. If you need more, you know how to contact me Mike. No sharing though, not even with your friends over here. I’ll be seeing you.”
+With that, Joseph strolled away with Darrell at his side.
+<<show_character Backend 1 empty>>
+<<show_character Backend 3 empty>>
+<<show_character Backend 2 empty>>
+McKinnon: “Morpheus, finish scene.”
+<<show_character Backend 1 Morpheus>>
+Morpheus: “Understood, exiting subject Cameron Smith.”
+<<fade_out Backgrounds 1>>
+<<stop_sound Backend Dealer_Room>>
+<<show_character Backend 1 empty>>
+<<show_character Backend 0 empty>>
+<<load_scene Backend 7>>
+===

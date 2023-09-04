@@ -1,6 +1,10 @@
 title: Ending_1
 tags:
 ---
+<<show_character Backend 0 empty>>
+<<show_character Backend 1 empty>>
+<<show_character Backend 2 empty>>
+<<show_character Backend 3 empty>>
 <<play_sound Backend Ending_1 true>>
 <<fade_out Backgrounds 1>>
 <<show_character Backend 1 Morpheus>>

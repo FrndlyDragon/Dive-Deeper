@@ -1,5 +1,9 @@
 ﻿title: Member_Woman
 tags:
 ---
-<<jump Member_Dialogue_Cont>>
+-> Observe woman
+    The woman’s arms are crossed on her chest. At her waist is a gun that was in its holster. Her body is partly turned away from you as she gives her full attention to the man, a frown on her brows.
+    <<jump Member_Woman>>
+-> Talk
+    <<jump Member_Dialogue_Cont>>
 ===
