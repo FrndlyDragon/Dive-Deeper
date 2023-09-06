@@ -1,0 +1,10 @@
+﻿title: Scene_8
+tags:
+---
+<<change_background Backgrounds Lab>>
+<<play_sound Backend Investigation true>>
+<<fade_out Backgrounds 1>>
+McKinnon finds himself in a sterile white room. He wears a lab coat and is watching Leonard as he speaks with a man in uniform. In the lab are dishes filled with samples of some kind. The samples look to be squirming and moving in the closed containers.
+<<activate_set Sets 1>>
+<<declare $cube_known to false>>
+===

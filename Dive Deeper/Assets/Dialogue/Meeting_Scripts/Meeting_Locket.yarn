@@ -1,0 +1,6 @@
+﻿title: Meeting_Locket
+tags:
+---
+A damaged locket. It looks to be smashed partly with rust building along the worn edges. In the locket is an image of a young girl and a man. The man is holding the girl as she sits in his lap, smiling for the camera.
+<<set $broken_locket to true>>
+===

@@ -1,0 +1,6 @@
+﻿title: Meeting_Letter
+tags:
+---
+A closed letter. The top left corner declares it to be from BF Labs as well as confidential. The place where an address would be is empty. It sits between Vera and McKinnon.
+<<set $letter_seen to true>>
+===

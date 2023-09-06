@@ -1,0 +1,94 @@
+﻿title: Hamon_Dialogue
+tags:
+---
+<<activate_set Backend 0>>
+<<show_character Backend 1 Hamon>>
+Hamon: “Let me get this straight. You want me to help distribute illicit drugs—Grade 3 drugs mind you—because you need information?”
+<<show_character Backend 0 General>>
+Matthias: “Indeed. The specifics are on a need-to-know basis of which you do not have the clearance. Just know that if you agree to this, we will overlook all your past failings. You can continue running your department as you have been as long as you agree.”
+<<show_character Backend 1 Hamon>>
+Hamon: “Blackmail, eh?”
+<<show_character Backend 0 General>>
+Matthias: “It’s the government, Julius. Quid pro quo. You do this for me, I’ll help you, because one day, someone else will decide to look into why Quadrant 1 has such a low conviction rate.”
+<<show_character Backend 1 Hamon>>
+He sighs.
+Hamon: “Fine. How is this going to work?”
+<<show_character Backend 0 General>>
+Matthias: “It’s simple, you’ll meet with a representative and the two of you will find a way to distribute the product. How you do it does not matter, just as long as you succeed.”
+<<show_character Backend 1 Hamon>>
+Hamon: “Is that it?”
+<<show_character Backend 0 General>>
+Matthias: “That’s it. But before you leave, we’ll need to keep this meeting between us. I’m sure you understand.”
+<<show_character Backend 1 Hamon>>
+Hamon: “Fine.”
+<<show_character Backend 0 General>>
+Matthias: “Good. Lieutenant? Escort Mr. Hamon to the medical ward. They already have their instructions.”
+<<show_character Backend 2 empty>>
+McKinnon: “Morpheus, finish scene.”
+<<show_character Backend 1 Morpheus>>
+Morpheus: “Understood, exiting subject Julius Hamon.”
+<<fade_in Backgrounds 1>>
+<<change_background Backgrounds Interrogation_Room>>
+<<stop_sound Backend Hamon>>
+<<play_sound Backend Suspicion_2 looping>>
+<<show_character Backend 0 empty>>
+<<show_character Backend 1 empty>>
+<<fade_out Backgrounds 1>>
+McKinnon returns to reality and takes off Detective Hamon’s headpiece. Hamon takes a few seconds to reorient himself before getting to his feet.
+<<show_character Backend 1 Hamon>>
+Hamon: “You understand now?”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “I still don’t understand why. What did Matthias mean?”
+<<show_character Backend 1 Hamon>>
+Hamon: “I can’t say directly, but in my twenty years, I’ve gotten to know a lot of people, McKinnon. I became friends with many of them, and in the Outer Districts, gangs are a way of life.”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “You’re helping gangs?”
+<<show_character Backend 1 Hamon>>
+Hamon: “Gangs aren’t the enemy, McKinnon. You’re new around here so you don’t understand the way the OD works. It’s a way of life here. They control an area and keep order there." 
+Hamon: "Conflicts are from incursions. You keep the peace between them, you keep the peace in the quadrants. You’ll understand later.”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “If you say so. This doesn’t explain why they wanted to distribute these things anyway. The military is involved as well. It can’t be just to create more addicts, right?”
+<<show_character Backend 1 Hamon>>
+He shrugs.
+Hamon: “I can’t say, but you know who might know?”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “The scientist? Can you talk about him?”
+<<show_character Backend 1 Hamon>>
+Hamon: “Even better. Get ready. I’ll be right back, but you’re going to have to be quick.”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “I’m sorry?”
+<<show_character Backend 1 Hamon>>
+Hamon: “I’m visiting a friend.”
+<<fade_in Backgrounds 1>>
+With that he rushes out of the room. McKinnon follows him a bit until Hamon leaves the building and decides to follow Hamon’s advice. He resets one of the stations and sets it on standby for the next use.
+True to his word, Hamon returns in ten minutes with an unconscious man slung over his shoulder. Hamon places the man on a seat and McKinnon connects him to the machine. As McKinnon gets ready, Hamon goes over to the seat where Vera was sleeping.
+<<fade_out Backgrounds 1>>
+<<show_character Backend 0 McKinnon>>
+McKinnon: “What are you doing, sir?”
+<<show_character Backend 1 Hamon>>
+Hamon: “I promised her. I’m not going down today, so I sure as hell am making sure she isn’t either.” 
+He looks at McKinnon. 
+Hamon: “You’re going to stop me?”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “Fine. We’re all in a lot of trouble anyway. What’s one more thing.”
+<<show_character Backend 1 Hamon>>
+Hamon smiles.
+Hamon: “That’s the spirit. Thirty minutes. That’s about as long as you got. Do what you got to do, and do it quick.”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “Understood. Morpheus, send me in.”
+<<show_character Backend 1 Morpheus>>
+Morpheus: “Subject’s name?”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “Oh yeah, confirmation. Hamon?”
+<<show_character Backend 1 Hamon>>
+Hamon: “Leonard Veross. It’s in his ID.”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “Morpheus, send me into Leonard Veross.”
+<<show_character Backend 1 Morpheus>>
+Morpheus: “Understood. Entering subject Leonard Veross. Date January 12th.”
+<<fade_in Backgrounds 1>>
+<<stop_sound Backend Suspicion_2>>
+<<show_character Backend 0 empty>>
+<<show_character Backend 1 empty>>
+<<load_scene Backend 10>>
+===

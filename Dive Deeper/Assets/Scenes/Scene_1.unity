@@ -585,7 +585,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.12, y: 5.12}
+  m_Size: {x: 4.65, y: 5.72}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -1621,7 +1621,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.12, y: 5.12}
+  m_Size: {x: 4.65, y: 5.72}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -1705,7 +1705,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.12, y: 5.12}
+  m_Size: {x: 4.65, y: 5.72}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -1839,13 +1839,17 @@ MonoBehaviour:
   - characterName: Dealer
     characterSprite: {fileID: 21300000, guid: 3dc745de57deca043ae6ac0f4da23d52, type: 3}
   - characterName: Dealer_2
-    characterSprite: {fileID: 21300000, guid: 4572144aa576ead4fb8580bc4459b2f6, type: 3}
+    characterSprite: {fileID: 21300000, guid: 0ed88f3130109c44da546d96f8fa1a65, type: 3}
   - characterName: Vera
-    characterSprite: {fileID: 21300000, guid: 4572144aa576ead4fb8580bc4459b2f6, type: 3}
+    characterSprite: {fileID: 21300000, guid: 22a8bf61c83352141977fed27daeeb05, type: 3}
   - characterName: Joseph
-    characterSprite: {fileID: 21300000, guid: 4572144aa576ead4fb8580bc4459b2f6, type: 3}
+    characterSprite: {fileID: 21300000, guid: 50b7eb93b81670b459670f5197e8082e, type: 3}
   - characterName: Darrell
-    characterSprite: {fileID: 21300000, guid: 4572144aa576ead4fb8580bc4459b2f6, type: 3}
+    characterSprite: {fileID: 21300000, guid: dbc02ef6961b0664abbbc19019bda096, type: 3}
+  - characterName: General
+    characterSprite: {fileID: 21300000, guid: d2598d95f15d7fd439f0bdd3ff0b6586, type: 3}
+  - characterName: Scientist
+    characterSprite: {fileID: 21300000, guid: d8ea364b538c3f54785f5b2f1001cc54, type: 3}
 --- !u!114 &1471367906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2275,7 +2279,7 @@ MonoBehaviour:
     bgName: Office_2
   - bgSprite: {fileID: 21300000, guid: 44dc0ec363eeac14396fe1fab5ab873d, type: 3}
     bgName: Interrogation
-  - bgSprite: {fileID: 21300000, guid: f20a8e94f87bc544692a1d850be5af8c, type: 3}
+  - bgSprite: {fileID: 21300000, guid: f556964bb8774e64781e8ed08889b266, type: 3}
     bgName: Bedroom
   spriteRenderer: {fileID: 1894816902}
   backgroundRenderer: {fileID: 189006463}
@@ -2448,7 +2452,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.12, y: 5.12}
+  m_Size: {x: 13.2, y: 11.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0

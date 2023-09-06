@@ -1,0 +1,27 @@
+﻿title: Scene_6
+tags:
+---
+<<change_background Backgrounds Alleyway>>
+<<play_sound Backend Vera true>>
+<<activate_set Sets 0>>
+<<fade_out Backgrounds 1>>
+McKinnon is back as Darrell. Vera is turning to leave as Joseph waves to her. McKinnon doesn’t have much time, but he has an idea. He has the information needed to trigger a memory. Joseph said it himself; Vera was the one that talked with the contact.
+<<show_character Backend 0 empty>>
+McKinnon: “Vera.”
+<<show_character Backend 1 Vera>>
+She turns around, annoyed. She doesn’t have time to voice those annoyances though.
+<<show_character Backend 0 empty>>
+McKinnon: “Who’s your government contact?”
+<<show_character Backend 1 Morpheus>>
+Morpheus: “Memory triggered.”
+<<fade_in Backgrounds 1>>
+<<change_background Backgrounds Meeting>>
+<<show_character Backend 1 empty>>
+<<fade_out Backgrounds 1>>
+McKinnon finds himself in a dark room sitting at a table. There are three seats, one for himself, one for Vera, and another unoccupied. 
+On the table in front of McKinnon is another briefcase, something he is getting tired of seeing. McKinnon is dressed rather blandly with nothing of note in sight.
+<<activate_set Sets 1>>
+<<declare $letter_seen to false>>
+<<declare $broken_locket to false>>
+<<set $strikes = 0>>
+===

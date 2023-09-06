@@ -1,0 +1,71 @@
+﻿title: Scene_7
+tags:
+---
+<<change_background Backgrounds Interrogation_Room>>
+<<play_sound Backend Suspicion_2 true>>
+<<fade_out Backgrounds 1>>
+<<show_character Backend 0 McKinnon>>
+McKinnon returns to reality. Morpheus greets him, but he’s too shocked to respond. He doesn’t know how to process what he has learned. Hamon is working with a scientist for another person. Who this person is, McKinnon did not know. 
+However, what he did know left him in a dilemma. Should he report what he found or confront Detective Hamon directly first?
+-> Report
+    McKinnon: “I have to report this. I can’t let Hamon get a chance to escape.”
+    He writes a report and sends it to headquarters. For now, Hamon could not know he is compromised. McKinnon steels himself before leaving the room.
+    <<fade_in Backgrounds 1>>
+    <<stop_sound Backend Suspicion_2>>
+    <<load_scene Backend 9>>
+-> Confront
+    McKinnon: “I need to know why.”
+<<fade_in Backgrounds 1>>
+He leaves the room and sees Hamon in his seat watching a show. Doubt tore at McKinnon. There is too much here that doesn't make sense. Why would McKinnon allow him to investigate if this was a possibility? Why would he help by bringing in Vera who he spoke with directly?
+<<change_background Backgrounds Office>>
+<<fade_out Backgrounds 1>>
+<<show_character Backend 1 Hamon>>
+Hamon: “Oh, you’re finished, McKinnon?”
+Hamon turns to face McKinnon and frowns. Knowing flashes in his eyes.
+Hamon: “What did you find?”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “Why are you working with them, sir?”
+<<show_character Backend 1 Hamon>>
+He laughs.
+Hamon: “Rather blunt there, eh? Would you believe me if I said I can’t talk about it?”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “What do you mean?”
+<<show_character Backend 1 Hamon>>
+Hamon: “I can’t talk about it.”
+He points to his head and then glances at the cameras abundant in the office.
+Hamon: “Do you understand?”
+<<show_character Backend 0 McKinnon>>
+Understanding dawned on McKinnon.
+McKinnon: “Implant?”
+<<show_character Backend 1 Hamon>>
+Hamon: “Yep. Come on, let’s go look at the suspects.”
+<<fade_in Backgrounds 1>>
+<<change_background Backgrounds Interrogation_Room>>
+The two go to the interrogation room and Hamon strolls right to a seat.
+<<show_character Backend 1 Hamon>>
+Hamon: “You have information, right?”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “I might. I don’t know if it’s enough.”
+<<show_character Backend 1 Hamon>>
+Hamon: “Well, you have Vera and the gang at least. That’ll serve as a jumping off point. You know what to do. Good luck, McKinnon.”
+<<show_character Backend 2 empty>>
+He places the helmet on and sits back in the chair, his body slowly relaxing as his mind is coaxed asleep. McKinnon takes his seat and straps in, an inkling of understanding sprouting within him.
+<<show_character Backend 0 McKinnon>>
+McKinnon: “Morpheus, connect to subject Julius Hamon.”
+<<show_character Backend 1 Morpheus>>
+Morpheus: “Understood. Connection established. Are you ready, detective?”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “I am.”
+<<show_character Backend 1 Morpheus>>
+Morpheus: “Understood. Good luck, detective. Entering subject Julius Hamon. Date, January 12th.”
+<<fade_in Backgrounds 1>>
+<<stop_sound Backend Suspicion_2>>
+<<show_character Backend 0 empty>>
+<<show_character Backend 1 empty>>
+<<change_background Backgrounds Office_2>>
+<<play_sound Backend Hamon true>>
+<<fade_out Backgrounds 1>>
+McKinnon finds himself in an office. He is standing beside it with another man sitting behind the desk, papers strewn about in front of him. In the guest seat is Detective Hamon, hunched forwards and pinching the bridge of his nose with his eyes shut. 
+Looking down, McKinnon finds himself in military uniform, his name tag reading Jermane Del Rio. A chuckle built in his throat. Hamon’s subconscious was going to make this as simple as possible.
+<<activate_set Sets 1>>
+===

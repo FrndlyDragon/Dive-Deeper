@@ -1,0 +1,63 @@
+﻿title: Scientist_Dialogue
+tags:
+---
+<<activate_set Sets 0>>
+<<show_character Backend 1 Scientist>>
+Leonard: “They’re not ready. We still need to study them. This is something unprecedented.”
+<<show_character Backend 0 Man>>
+Unknown Man: “What do you need? The department is asking and they’re getting very impatient.”
+<<show_character Backend 1 Scientist>>
+Leonard: “Get me a sample.”
+<<show_character Backend 2 empty>>
+McKinnon realizes the statement is directed at him and grabs one of the dishes to give to Leonard.
+<<show_character Backend 1 Scientist>>
+Leonard: “Look at this thing. Do you want to put this in you?”
+<<show_character Backend 0 Man>>
+The man squirms and says nothing.
+<<show_character Backend 1 Scientist>>
+Leonard: “Exactly. We need data. Mice are nice and all, but we’ve seen things affect different matter in different ways.”
+<<show_character Backend 0 Man>>
+Unknown Man: “You need people to trial?”
+<<show_character Backend 1 Scientist>>
+Leonard: “Yes. We need to record its effects before we start considering its use. I’m sure the department understands. They wouldn’t want their soldiers turning into mindless creatures, now do they?”
+<<show_character Backend 0 Man>>
+Unknown Man: “Alright, I’ll pass that along and see what I can do.”
+<<show_character Backend 1 Scientist>>
+Leonard: “Thank you.”
+He waits for the man to leave and sighs. 
+<<show_character Backend 0 empty>>
+<<show_character Backend 1 Scientist>>
+Leonard: “Bureaucrats. They never understand.”
+<<show_character Backend 0 empty>>
+-> “What’s this cube?” <<if $cube_known is true>>
+    <<show_character Backend 1 Scientist>>
+    Leonard: “What do you mean what’s this cube? Are you feeling alright?”
+    <<show_character Backend 0 empty>>
+    McKinnon: “Sorry, I meant where.”
+    <<show_character Backend 1 Scientist>>
+    He stares at McKinnon for a few seconds then shrugs.
+    Leonard: “You never got to see it, huh? That’s probably for the best. It’s not pleasant. God knows how they found it in the first place.”
+    <<show_character Backend 0 empty>>
+    McKinnon: “Have you seen it?”
+    <<show_character Backend 1 Scientist>>
+    Leonard: “Of course. Once. I can never forget it.”
+    <<show_character Backend 1 Morpheus>>
+    Morpheus: “Memory triggered.”
+    <<fade_in Backgrounds 1>>
+    <<stop_sound Backend Investigation>>
+    <<load_scene Backend 11>>
+-> “These things don’t seem safe.”
+    <<show_character Backend 1 Scientist>>
+    Leonard: “Of course not. Nothing from that thing is safe. And it’s getting worse. But no, keep going, keep pushing because it hasn’t blown up on us yet.”
+    <<show_character Backend 0 empty>>
+    McKinnon: “You don’t like these things.”
+    <<show_character Backend 1 Scientist>>
+    Leonard:  “Not one bit. But someone’s to do it, so better it be me. If I ever go somewhere or disappear, you should leave. They’ll try to promote you, trap you here, but don’t let them. If you get the chance, leave this all behind. If you ask why, then this thing I’m holding is all the proof you need.”
+    <<show_character Backend 0 empty>>
+    McKinnon: “Morpheus, finish scene.”
+    <<show_character Backend 1 Morpheus>>
+    Morpheus: “Understood. Exiting subject Leonard Veross.”
+    <<fade_in Backgrounds 1>>
+    <<stop_sound Backend Investigation>>
+    <<load_scene Backend 12>>
+===
