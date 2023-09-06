@@ -1863,17 +1863,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSounds:
+  - audioClip: {fileID: 8300000, guid: a212e1a4dc5c81146977c6b6c9a8d7ed, type: 3}
+    soundName: Keyboard
+    soundVol: 1
+    soundPitch: 1
+    isLooping: 0
+    source: {fileID: 0}
   - audioClip: {fileID: 8300000, guid: 94be1cad853cd6b4ab395faf4b2a20d5, type: 3}
     soundName: Space_Calm
     soundVol: 0.8
     soundPitch: 1
     isLooping: 1
     source: {fileID: 0}
-  - audioClip: {fileID: 8300000, guid: a212e1a4dc5c81146977c6b6c9a8d7ed, type: 3}
-    soundName: Keyboard
-    soundVol: 1
+  - audioClip: {fileID: 8300000, guid: 6709778fc8c03284a8f673d2878579ce, type: 3}
+    soundName: Space_Calm_2
+    soundVol: 0.8
     soundPitch: 1
-    isLooping: 0
+    isLooping: 1
     source: {fileID: 0}
   - audioClip: {fileID: 8300000, guid: d8bf6d97c4cbd31478c133be0c3a2b01, type: 3}
     soundName: Interrogation_Room
@@ -1887,6 +1893,12 @@ MonoBehaviour:
     soundPitch: 1
     isLooping: 1
     source: {fileID: 0}
+  - audioClip: {fileID: 8300000, guid: d7a4a0f3f8d3eca47a5bf50783e3856c, type: 3}
+    soundName: Suspicion_2
+    soundVol: 0.8
+    soundPitch: 1
+    isLooping: 1
+    source: {fileID: 0}
   - audioClip: {fileID: 8300000, guid: 9add83a71497bb8488c3d784d04e8345, type: 3}
     soundName: Dealer_Room
     soundVol: 0.8
@@ -1894,7 +1906,37 @@ MonoBehaviour:
     isLooping: 1
     source: {fileID: 0}
   - audioClip: {fileID: 8300000, guid: 6709778fc8c03284a8f673d2878579ce, type: 3}
-    soundName: Space_Calm_2
+    soundName: Hamon
+    soundVol: 0.8
+    soundPitch: 1
+    isLooping: 1
+    source: {fileID: 0}
+  - audioClip: {fileID: 8300000, guid: 24ba09b1d67827b46aaf15c6e412d488, type: 3}
+    soundName: Vera
+    soundVol: 0.8
+    soundPitch: 1
+    isLooping: 1
+    source: {fileID: 0}
+  - audioClip: {fileID: 8300000, guid: 6709778fc8c03284a8f673d2878579ce, type: 3}
+    soundName: Investigation
+    soundVol: 0.8
+    soundPitch: 1
+    isLooping: 1
+    source: {fileID: 0}
+  - audioClip: {fileID: 8300000, guid: f360f3a9de270124fa8d87406d11ba85, type: 3}
+    soundName: Ending_1
+    soundVol: 0.8
+    soundPitch: 1
+    isLooping: 1
+    source: {fileID: 0}
+  - audioClip: {fileID: 8300000, guid: fd2efe3ba13e0e646bc2381d46d66af9, type: 3}
+    soundName: Ending_2
+    soundVol: 0.8
+    soundPitch: 1
+    isLooping: 1
+    source: {fileID: 0}
+  - audioClip: {fileID: 8300000, guid: fd2efe3ba13e0e646bc2381d46d66af9, type: 3}
+    soundName: True_Ending
     soundVol: 0.8
     soundPitch: 1
     isLooping: 1

@@ -1,18 +1,21 @@
 title: Ending_1
 tags:
 ---
+<<change_background Backgrounds Interrogation_Room>>
 <<show_character Backend 0 empty>>
 <<show_character Backend 1 empty>>
 <<show_character Backend 2 empty>>
 <<show_character Backend 3 empty>>
-<<play_sound Backend Ending_1 true>>
 <<fade_out Backgrounds 1>>
 <<show_character Backend 1 Morpheus>>
 Morpheus: "I apologize, detective, but keeping you in the dream would have been unsafe."
 <<show_character Backend 0 McKinnon>>
 McKinnon: "I understand. It's not your fault."
+<<fade_in Backgrounds 1>>
 He sighs and sits up, staring up at the ceiling. The investigation would have to be put on pause now. With the rest needed before another attempt could be made, all McKinnon can do is wait.
 He leaves the room and Hamon is still there, working on whatever is on his monitor. McKinnon's approach draws Hamon's attention. A look of understanding passes through him.
+<<play_sound Backend Ending_1 true>>
+<<fade_out Backgrounds 1>>
 <<show_character Backend 1 Hamon>>
 Hamon: "No luck?"
 <<show_character Backend 0 McKinnon>>

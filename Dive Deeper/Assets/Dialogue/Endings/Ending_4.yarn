@@ -1,5 +1,68 @@
 ﻿title: Ending_4
 tags:
 ---
+<<fade_in Background 1>>
+<<show_character Backend 0 empty>>
+<<show_character Backend 1 empty>>
+<<change_background Background Cube>>
+<<play_sound Backend Ending_4 true>>
+<<fade_out Background 1>>
+McKinnon finds himself in a wide space. In the center is a giant cube that glows and pulsates. People surround it, scurrying about like ants. 
+Some people talk, but the sounds of their voices get drowned by the pulsating beat of the cube. It grows and grows, reverberating in McKinnon’s head. 
+Then it stops, and there is a voice.
+Unknown: “Well. This is most unexpected. You have quite the inquisitive mind.”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “What’s going on?”
+Unknown: “Do not panic, McKinnon. I’m not here to hurt you.”
+Something is very wrong. A dream is talking to McKinnon directly, something that shouldn’t be possible.
+Unknown: “Oh, it is very possible. Your device came from the Mother. It’s only natural that I can use it to communicate.”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “Who are you?”
+Unknown: “I’m the Mother’s guardian. But she will have no need for me soon. You, on the other hand… You want knowledge, do you not?”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “Of what?”
+Unknown: “All that has transpired here. Where those things humans call “stimulants” come from. Where your precious “technology” originates.”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “What’s the price?”
+Unknown: “There is no price. The question is whether or not your mind can handle it. But you’ve come this far, I am certain you will be fine.”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “Then show me.”
+Unknown: “As you wish. Here is but a glimpse of your past.”
+Images and scenes begin to flash before McKinnon’s mind. Miners discovering the cube, scientists investigating it with caution, the discovery of the first miracle materials, the resulting exploitation of it as more and more people made their way to the cube.
+<<show_character Backend 1 empty>>
+“McKinnon” a far off voice yells.
+<<show_character Backend 0 McKinnon>>
+He sees men slowly losing their mind, some forced to be dragged away captured. He sees the cube’s glow get brighter and brighter with every passing decade. He sees more and more dangerous materials extracted, the value blinding rationality.
+<<show_character Backend 1 empty>>
+“McKinnon!”
+He is ripped away from the dizzying cascade of images and returns to the real world, Hamon towering over him.
+<<show_character Backend 1 Hamon>>
+Hamon: “What’s going on? You began shaking like crazy. Morpheus couldn’t shut down the dream normally.”
+<<show_character Backend 0 McKinnon>>
+He looks at Hamon in a daze.
+McKinnon: “We need to go.”
+<<show_character Backend 1 Hamon>>
+Hamon: “Yeah, no shit. What happened, McKinnon?”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “I saw everything. Morpheus, download today’s information and send it to me. Now.”
+<<show_character Backend 1 Morpheus>>
+Morpheus: “Understood.”
+<<show_character Backend 1 Hamon>>
+Hamon: “Hang on. What do you mean ‘everything’?”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “The truth, sir. Of Blue Forge. Of these drugs. These tech. It’s all a farce. It’s all…magic.”
+<<show_character Backend 1 Hamon>>
+Hamon: “Have you lost your fucking mind?”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “No. I’ll show you. But we need to run as fast as we can. You trust me?”
+<<show_character Backend 1 Hamon>>
+Hamon: “I don’t have anything better to do. I sent Vera away already. I know a few places we can hide out.”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “Good. Then let’s go.”
+<<fade_in Background 1>>
+In the next weeks, an uproar began. In the depths of the web, a page appeared with claims that were outlandish at first. But as the evidence grew and grew and endorsements came left and right, the veracity of the claims were in no doubt.
+The storm that followed was unprecedented and when it reached the City, it came to a boiling point. The attempts by the government to assuage public sentiment only fueled the anger and fear.
+With the two parts of the city now united, the fall naturally came after. As for the whistleblower, no one knew what happened to them. Did the government get them? Did they flee? Or were they leading the charge?
+End.
 
 ===
