@@ -1,5 +1,46 @@
 ﻿title: Ending_3
 tags:
 ---
-
+<<show_character Backend 0 empty>>
+<<show_character Backend 1 empty>>
+<<change_background Backgrounds Interrogation_Room>>
+<<play_sound Backend True_Ending true>>
+<<fade_out Backgrounds 1>>
+<<show_character Backend 1 Hamon>>
+Hamon: "Find anything, McKinnon?"
+<<show_character Backend 0 McKinnon>>
+McKinnon: "I think I figured it all out."
+<<show_character Backend 1 Hamon>>
+Hamon raises a brow.
+Hamon: "Well, explain it to me while we leave."
+<<show_character Backend 0 McKinnon>>
+McKinnon: "Where's Vera?"
+<<show_character Backend 1 Hamon>>
+Hamon: "I sent her away. She's a bit disorientated, but her crew came by to pick her up. She'll be fine. Can't say the same for the two of us. Come on."
+<<fade_in Backgrounds 1>>
+McKinnon makes a save of the day's events, and the two make their way out of the office.
+<<change_background Backgrounds Test_2>>
+<<fade_out Backgrounds 1>>
+<<show_character Backend 0 McKinnon>>
+McKinnon: "This whole thing is a conspiracy."
+<<show_character Backend 1 Hamon>>
+Hamon: "I know that much, McKinnon. Any details we can use?"
+<<show_character Backend 0 McKinnon>>
+McKinnon: "The drugs are military. They're using the Outer Districts to test them."
+<<show_character Backend 1 Hamon>>
+Hamon's expression darkens.
+Hamon: "Testing?"
+<<show_character Backend 0 McKinnon>>
+McKinnon: "Blue Forge has a new version of stims. That scientist you grabbed? He's a head researcher of some sort. They needed people to see the effects."
+<<show_character Backend 1 Hamon>>
+Hamon: "Those fuckers. If they wanted to test that shit, they should have grabbed their own soldiers, not getting civilians involved."
+<<show_character Backend 0 McKinnon>>
+McKinnon: "It gets worse. These things aren't normal. It looked almost alive. These stims are already bad enough, but something like that can only be bad news."
+<<show_character Backend 1 Hamon>>
+Hamon: "People have to know. Follow me. I have some people that need to know about this."
+<<fade_in Backend 1>>
+<<stop_sound Backend Ending_3>>
+<<show_character Backend 0 empty>>
+<<show_character Backend 1 empty>>
+<<load_scene Backend 13>>
 ===

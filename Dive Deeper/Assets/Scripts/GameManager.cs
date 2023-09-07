@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Yarn.Unity;
@@ -24,21 +21,26 @@ public class GameManager : MonoBehaviour
 
     public InventoryItem selectedItem;
 
-    public int sceneIndex;
+    public int sceneIndex = 1;
     public float volume = 1f;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         DontDestroyOnLoad(gameObject);
     }
 
     public void UpdateScene() {
-        sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        if (SceneManager.GetActiveScene().buildIndex > 1) {
+            sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        }
     }
 
     [YarnCommand("load_last_scene")]
     public void LoadLastScene() {
+        if (SceneManager.GetActiveScene().buildIndex == 0) {
+            return;
+        }
         SceneManager.LoadScene(sceneIndex);
     }
 

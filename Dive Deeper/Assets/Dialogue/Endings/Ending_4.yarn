@@ -5,7 +5,7 @@ tags:
 <<show_character Backend 0 empty>>
 <<show_character Backend 1 empty>>
 <<change_background Background Cube>>
-<<play_sound Backend Ending_4 true>>
+<<play_sound Backend True_Ending true>>
 <<fade_out Background 1>>
 McKinnon finds himself in a wide space. In the center is a giant cube that glows and pulsates. People surround it, scurrying about like ants. 
 Some people talk, but the sounds of their voices get drowned by the pulsating beat of the cube. It grows and grows, reverberating in McKinnon’s head. 
@@ -28,6 +28,7 @@ Unknown: “There is no price. The question is whether or not your mind can hand
 <<show_character Backend 0 McKinnon>>
 McKinnon: “Then show me.”
 Unknown: “As you wish. Here is but a glimpse of your past.”
+<<fade_in Background 1>>
 Images and scenes begin to flash before McKinnon’s mind. Miners discovering the cube, scientists investigating it with caution, the discovery of the first miracle materials, the resulting exploitation of it as more and more people made their way to the cube.
 <<show_character Backend 1 empty>>
 “McKinnon” a far off voice yells.
@@ -36,6 +37,8 @@ He sees men slowly losing their mind, some forced to be dragged away captured. H
 <<show_character Backend 1 empty>>
 “McKinnon!”
 He is ripped away from the dizzying cascade of images and returns to the real world, Hamon towering over him.
+<<change_background Backgrounds Interrogation_Room>>
+<<fade_out Background 1>>
 <<show_character Backend 1 Hamon>>
 Hamon: “What’s going on? You began shaking like crazy. Morpheus couldn’t shut down the dream normally.”
 <<show_character Backend 0 McKinnon>>
@@ -64,5 +67,8 @@ In the next weeks, an uproar began. In the depths of the web, a page appeared wi
 The storm that followed was unprecedented and when it reached the City, it came to a boiling point. The attempts by the government to assuage public sentiment only fueled the anger and fear.
 With the two parts of the city now united, the fall naturally came after. As for the whistleblower, no one knew what happened to them. Did the government get them? Did they flee? Or were they leading the charge?
 End.
-
+<<stop_sound Backend Ending_3>>
+<<show_character Backend 0 empty>>
+<<show_character Backend 1 empty>>
+<<load_scene Backend 13>>
 ===

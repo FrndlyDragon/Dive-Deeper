@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Audio;
 using Yarn.Unity;
 
 /**
@@ -27,6 +26,8 @@ public class SoundManager : MonoBehaviour
             sounds.source.pitch = sounds.soundPitch;
             sounds.source.loop = sounds.isLooping;
         }
+
+        PlaySound("Space_Calm", true);
     }
 
     [YarnCommand("play_sound")]
@@ -96,7 +97,7 @@ public class SoundManager : MonoBehaviour
             yield return null;
             temp += Time.deltaTime;
             audioSource.volume = GameManager.Instance.volume * temp/2f;
-            Debug.Log(audioSource.volume);
+            //Debug.Log(audioSource.volume);
         }
 
     }
@@ -107,7 +108,7 @@ public class SoundManager : MonoBehaviour
             yield return null;
             temp -= Time.deltaTime;
             audioSource.volume = GameManager.Instance.volume * temp/2f;
-            Debug.Log(audioSource.volume);
+            //Debug.Log(audioSource.volume);
         }
 
         audioSource.Stop();
