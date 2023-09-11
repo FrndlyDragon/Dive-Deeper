@@ -1,7 +1,7 @@
 ﻿title: Hamon_Dialogue
 tags:
 ---
-<<activate_set Backend 0>>
+<<activate_set Sets 0>>
 <<show_character Backend 1 Hamon>>
 Hamon: “Let me get this straight. You want me to help distribute illicit drugs—Grade 3 drugs mind you—because you need information?”
 <<show_character Backend 0 General>>

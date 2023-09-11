@@ -15,6 +15,8 @@ McKinnon: "I understand. It's not your fault."
 He sighs and sits up, staring up at the ceiling. The investigation would have to be put on pause now. With the rest needed before another attempt could be made, all McKinnon can do is wait.
 He leaves the room and Hamon is still there, working on whatever is on his monitor. McKinnon's approach draws Hamon's attention. A look of understanding passes through him.
 <<play_sound Backend Ending_1 true>>
+<<change_background Backgrounds Office>>
+<<show_character Backend 1 empty>>
 <<fade_out Backgrounds 1>>
 <<show_character Backend 1 Hamon>>
 Hamon: "No luck?"
@@ -39,10 +41,8 @@ Hamon: "Nothing. It's a normal day. Just relax a bit and if a report comes that 
 McKinnon: "Alright, sir."
 <<fade_in Backgrounds 1>>
 <<show_character Backend 1 empty>>
-<<stop_sound Backened Ending_1>>
 McKinnon goes home for the day and after a releasing bit of frustration and worry, he goes to sleep and returns to the office the next day.
 <<fade_out Backgrounds 1>>
-<<play_sound Backend Ending_1 true>>
 <<show_character Backend 1 Hamon>>
 Hamon: "Bad news, McKinnon."
 <<show_character Backend 0 McKinnon>>
@@ -72,5 +72,6 @@ McKinnon: "It's not your fault, sir. Come on, let's get back to work."
 <<fade_in Backgrounds 1>>
 From then, McKinnon continues his career as a Outer District detective. When Hamon inevitably retires, McKinnon takes his place as head detective and has a eventful and fruitful life.
 But there is that gnawing that eats at him at every stage of his life. A little thorn in the back of his mind that asked "what if", but it is a question that he will never be able to answer.
+<<stop_sound Backend Ending_1>>
 <<load_last_scene Backend>>
 ===

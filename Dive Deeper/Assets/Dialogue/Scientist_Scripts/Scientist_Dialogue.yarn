@@ -53,7 +53,7 @@ Leonard: “Bureaucrats. They never understand.”
     McKinnon: “You don’t like these things.”
     <<show_character Backend 1 Scientist>>
     Leonard:  “Not one bit. But someone’s to do it, so better it be me. If I ever go somewhere or disappear, you should leave. They’ll try to promote you, trap you here, but don’t let them. If you get the chance, leave this all behind. If you ask why, then this thing I’m holding is all the proof you need.”
-    <<show_character Backend 0 empty>>
+    <<show_character Backend 0 McKinnon>>
     McKinnon: “Morpheus, finish scene.”
     <<show_character Backend 1 Morpheus>>
     Morpheus: “Understood. Exiting subject Leonard Veross.”

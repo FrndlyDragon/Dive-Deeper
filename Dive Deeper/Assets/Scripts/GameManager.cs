@@ -10,11 +10,6 @@ public class GameManager : MonoBehaviour
     {
         get
         {
-            if (_instance == null)
-            {
-                _instance = FindObjectOfType<GameManager>();
-                
-            }
             return _instance;
         }
     }
@@ -27,7 +22,13 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        if (_instance == null) {
+            _instance = FindObjectOfType<GameManager>();
+            DontDestroyOnLoad(gameObject);
+        }
+        else {
+            Destroy(gameObject);
+        }
     }
 
     public void UpdateScene() {
@@ -38,9 +39,6 @@ public class GameManager : MonoBehaviour
 
     [YarnCommand("load_last_scene")]
     public void LoadLastScene() {
-        if (SceneManager.GetActiveScene().buildIndex == 0) {
-            return;
-        }
         SceneManager.LoadScene(sceneIndex);
     }
 

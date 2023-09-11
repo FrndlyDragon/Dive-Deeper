@@ -1,6 +1,28 @@
 ﻿title: Scene_6
 tags:
 ---
+<<change_background Backgrounds Interrogation_Room>>
+<<play_sound Backend Interrogation_Room true>>
+<<show_character Backend 0 McKinnon>>
+<<show_character Backend 1 Morpheus>>
+<<fade_out Backgrounds 1>>
+Morpheus: “Welcome back, detective. Was your trip useful?”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “It was. I don’t need anything else from Mr. Smith. The events after, I know all about.”
+<<show_character Backend 1 Morpheus>>
+Morpheus: “Understood, I’ll place him back into stasis. Is there anything else, detective?”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “I need to re-enter Vera’s mind.”
+<<show_character Backend 1 Morpheus>>
+Morpheus: “Understood. Connecting to subject Vera Fendley. Are you ready, detective?”
+<<show_character Backend 0 McKinnon>>
+McKinnon: “I am.”
+<<show_character Backend 1 Morpheus>>
+Morpheus: “Understood. Entering Vera Fendley. Date, January 12th.”
+<<fade_in Backgrounds 1>>
+<<stop_sound Backend Interrogation_Room>>
+<<show_character Backend 0 Joseph>>
+<<show_character Backend 1 Vera>>
 <<change_background Backgrounds Alleyway>>
 <<play_sound Backend Vera true>>
 <<activate_set Sets 0>>

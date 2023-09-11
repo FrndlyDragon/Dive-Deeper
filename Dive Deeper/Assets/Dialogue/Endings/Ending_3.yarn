@@ -39,7 +39,6 @@ McKinnon: "It gets worse. These things aren't normal. It looked almost alive. Th
 <<show_character Backend 1 Hamon>>
 Hamon: "People have to know. Follow me. I have some people that need to know about this."
 <<fade_in Backend 1>>
-<<stop_sound Backend Ending_3>>
 <<show_character Backend 0 empty>>
 <<show_character Backend 1 empty>>
 <<load_scene Backend 13>>

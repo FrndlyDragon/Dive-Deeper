@@ -80,7 +80,7 @@ McKinnon: “Thank you, sir. I’ll do my best.”
 <<show_character Backend 1 empty>>
 <<stop_sound Backend Suspicion>>
 <<wait 0.5>>
-<<change_background Backgrounds Interrogation>>
+<<change_background Backgrounds Interrogation_Room>>
 <<play_sound Backend Interrogation_Room true>>
 <<fade_out Backgrounds 1>>
 <<show_character Backend 0 McKinnon>>

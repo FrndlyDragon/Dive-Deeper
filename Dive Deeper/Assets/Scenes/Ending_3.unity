@@ -1820,7 +1820,7 @@ MonoBehaviour:
   dialogueViews:
   - {fileID: 1602449391}
   - {fileID: 1424734070}
-  startNode: Scene_1
+  startNode: Ending_3
   startAutomatically: 1
   runSelectedOptionAsLine: 0
   lineProvider: {fileID: 0}
@@ -1947,7 +1947,7 @@ MonoBehaviour:
   - bgSprite: {fileID: 21300000, guid: 7f6e611e03941c5499113476c15c175f, type: 3}
     bgName: Office_2
   - bgSprite: {fileID: 21300000, guid: 44dc0ec363eeac14396fe1fab5ab873d, type: 3}
-    bgName: Interrogation
+    bgName: Interrogation_Room
   - bgSprite: {fileID: 21300000, guid: f556964bb8774e64781e8ed08889b266, type: 3}
     bgName: Bedroom
   spriteRenderer: {fileID: 1960641496}

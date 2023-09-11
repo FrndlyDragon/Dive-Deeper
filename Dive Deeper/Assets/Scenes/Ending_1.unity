@@ -904,7 +904,7 @@ MonoBehaviour:
   - bgSprite: {fileID: 21300000, guid: 7f6e611e03941c5499113476c15c175f, type: 3}
     bgName: Office_2
   - bgSprite: {fileID: 21300000, guid: 44dc0ec363eeac14396fe1fab5ab873d, type: 3}
-    bgName: Interrogation
+    bgName: Interrogation_Room
   - bgSprite: {fileID: 21300000, guid: f556964bb8774e64781e8ed08889b266, type: 3}
     bgName: Bedroom
   - bgSprite: {fileID: 21300000, guid: e73ca18ff3ad0294eb520f3a1f936e84, type: 3}
@@ -914,7 +914,7 @@ MonoBehaviour:
   - bgSprite: {fileID: 21300000, guid: 95bb8ab30de43cb45838afdce8d66f1a, type: 3}
     bgName: Meeting
   spriteRenderer: {fileID: 733653128}
-  backgroundRenderer: {fileID: 0}
+  backgroundRenderer: {fileID: 745678705}
 --- !u!4 &733653130
 Transform:
   m_ObjectHideFlags: 0
@@ -1454,7 +1454,7 @@ MonoBehaviour:
   dialogueViews:
   - {fileID: 1207016036}
   - {fileID: 1193018595}
-  startNode: Scene_1
+  startNode: Ending_1
   startAutomatically: 1
   runSelectedOptionAsLine: 0
   lineProvider: {fileID: 0}

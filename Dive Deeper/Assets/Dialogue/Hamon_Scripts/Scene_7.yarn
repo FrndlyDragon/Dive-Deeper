@@ -42,6 +42,7 @@ Hamon: “Yep. Come on, let’s go look at the suspects.”
 <<fade_in Backgrounds 1>>
 <<change_background Backgrounds Interrogation_Room>>
 The two go to the interrogation room and Hamon strolls right to a seat.
+<<fade_out Backgrounds 1>>
 <<show_character Backend 1 Hamon>>
 Hamon: “You have information, right?”
 <<show_character Backend 0 McKinnon>>

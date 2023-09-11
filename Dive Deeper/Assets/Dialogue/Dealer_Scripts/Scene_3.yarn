@@ -1,7 +1,7 @@
 ﻿title: Scene_3
 tags:
 ---
-<<change_background Backgrounds Interrogation>>
+<<change_background Backgrounds Interrogation_Room>>
 <<play_sound Backend Interrogation_Room true>>
 <<fade_out Backgrounds 1>>
 <<show_character Backend 1 Morpheus>>
@@ -10,11 +10,11 @@ Morpheus: “Welcome back, detective. Your position will be held for three days.
 McKinnon: “Thank you, Morpheus.”
 <<show_character Backend 1 empty>>
 <<stop_sound Backend Interrogation_Room>>
-<<fade_in Background 1>>
+<<fade_in Backgrounds 1>>
 McKinnon leaves the room and sees Detective Hamon in the office, feet kicked up as he leaned back in his chair with a mug of coffee. Hamon looks over at him and gets to his feet.
 <<change_background Backgrounds Office>>
 <<play_sound Backend Space_Calm_2 true>>
-<<fade_out Background 1>>
+<<fade_out Backgrounds 1>>
 <<show_character Backend 1 Hamon>>
 Hamon: “Any luck, McKinnon?”
 <<show_character Backend 0 McKinnon>>
@@ -51,6 +51,7 @@ Hamon: “No worries, McKinnon. Good luck.”
 <<stop_sound Backend Space_Calm_2>>
 The imprisoned gang member was set up in the detainment room next to the drug dealer. Everything was connected, ready for a dream delve.
 <<play_sound Backend Interrogation_Room true>>
+<<change_background Backgrounds Interrogation_Room>>
 <<fade_out Backgrounds 1>>
 <<show_character Backend 1 Morpheus>>
 Morpheus: “Welcome back, detective. I assume the next target is this woman?”
@@ -63,7 +64,9 @@ Morpheus: “Be forewarned that there may be artifacts and intrusions during you
 McKinnon: “Understood. I’m ready, Morpheus.”
 <<show_character Backend 1 Morpheus>>
 Morpheus: “Good luck, detective. Entering Vera Fendley. Data, January 12th.”
-<<fade_in Background 1>>
+<<fade_in Backgrounds 1>>
 <<stop_sound Backend Interrogation_Room>>
+<<show_character Backend 0 empty>>
+<<show_character Backend 1 empty>>
 <<load_scene Backend 5>>
 ===

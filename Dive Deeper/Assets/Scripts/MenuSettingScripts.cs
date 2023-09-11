@@ -1,9 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using Yarn.Unity;
 
 public class MenuSettingScripts : MonoBehaviour
 {
     public GameObject warningPopUp;
+    public GameObject redoMenu;
     public GameObject settingsMenu;
     public Slider volSlider;
 
@@ -49,7 +52,33 @@ public class MenuSettingScripts : MonoBehaviour
         GameManager.Instance.LoadScene(1);
     }
 
+    public void Reset() {
+        if (SceneManager.GetActiveScene().buildIndex == 0) {
+            return;
+        }
+
+        settingsMenu.SetActive(false);
+        GameManager.Instance.LoadScene(1);
+    }
+
     public void LastScene() {
+        if (SceneManager.GetActiveScene().buildIndex == 0) {
+            return;
+        }
+
+        redoMenu.SetActive(false);
+        settingsMenu.SetActive(false);
         GameManager.Instance.LoadLastScene();
+    }
+
+    public void MainMenu() {
+        redoMenu.SetActive(false);
+        SoundManager.instance.PlaySound("Space_Calm", true);
+        GameManager.Instance.LoadScene(0);
+    }
+
+    [YarnCommand("redo")]
+    public void OpenRedoMenu() {
+        redoMenu.SetActive(true);
     }
 }

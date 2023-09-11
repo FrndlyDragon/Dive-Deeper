@@ -1,7 +1,7 @@
 ﻿title: Scene_5
 tags:
 ---
-<<change_background Backgrounds Interrogation>>
+<<change_background Backgrounds Interrogation_Room>>
 <<play_sound Backend Interrogation_Room true>>
 <<fade_out Backgrounds 1>>
 <<show_character Backend 1 Morpheus>>
@@ -15,7 +15,7 @@ McKinnon: “I know, Morpheus. Just send me under.”
 <<show_character Backend 1 Morpheus>>
 Morpheus: “Understood. Good luck, detective. Entering Cameron Smith. Date, January 12th.”
 <<fade_in Backgrounds 1>>
-<<stop_sound Backend Interrogation>>
+<<stop_sound Backend Interrogation_Room>>
 <<show_character Backend 0 empty>>
 <<show_character Backend 1 empty>>
 <<change_background Backgrounds Alleyway>>
@@ -35,11 +35,11 @@ Cameron: “If you say so, man. Let’s get this thing over with. I don’t feel
 <<show_character Backend 1 Morpheus>>
 Morpheus: “Memory triggered.”
 <<fade_in Backgrounds 1>>
-<<show_character Backend 3 Darrell>>
+<<show_character Backend 2 Darrell>>
 <<show_character Backend 1 Joseph>>
 <<fade_out Backgrounds 1>>
 Joseph: “Hello, my friends. Good to see you can make it.”
-<<show_character Backend 2 empty>>
+<<show_character Backend 3 empty>>
 McKinnon recognizes the voice and face. The man is the same person that McKinnon saw in Vera’s dream. He is dressed a bit differently here, still in street clothes. The man beside him is Darrell who sports a disgruntled look, gun at his side.
 <<show_character Backend 1 Joseph>>
 Joseph: “Ah, who is this lovely lady here? You didn’t mention bringing a woman?”
@@ -51,15 +51,15 @@ Joseph: “I see. Well, as long as you trust her, it isn’t my problem. Let’s
 Mike: “No need. Seen that thing first hand. Asked where he got it, pointed me to you.”
 <<show_character Backend 1 Joseph>>
 Joseph: “Good. Then I take it we have a deal?”
-<<show_character Backend 2 empty>>
+<<show_character Backend 3 empty>>
 Mike looked over at Cameron who looked at McKinnon. The detective nodded.
 <<show_character Backend 1 Joseph>>
 Joseph: “Ah, I should have asked the lady then. Miss Katie, do you have the credits?”
-<<show_character Backend 2 empty>>
+<<show_character Backend 3 empty>>
 McKinnon: “Cameron has the card.”
 <<show_character Backend 1 Joseph>>
 Joseph: “I’ll put the case on the ground. Darrell, can you handle the credits?”
-<<show_character Backend 3 Darrell>>
+<<show_character Backend 2 Darrell>>
 Darrell: “Sure.”
 The muscle walked up to Cameron and put his hand out. Cameron held out the card and tapped it against the man’s wrist. Joseph pulled up a screen and waited before giving a satisfied nod.
 <<show_character Backend 1 Joseph>>
@@ -79,12 +79,12 @@ Joseph: “We got a source. We got the source. See what Darrell has on his waist
 Cameron: “The sparker? Yeah.”
 <<show_character Backend 1 Joseph>>
 Joseph: “Blue Forge. Model 9. Military. Trust me, these are the real deal.”
-<<show_character Backend 2 empty>>
+<<show_character Backend 3 empty>>
 McKinnon: “You have a government contact?”
 <<show_character Backend 1 Joseph>>
 He smiles.
 Joseph: “Where else will we get these things?”
-<<show_character Backend 2 empty>>
+<<show_character Backend 3 empty>>
 McKinnon: “Have you met this person?”
 <<show_character Backend 1 Joseph>>
 Joseph: “Curious? Me too. Sadly, we never get to see them and you won’t either. They only meet with my boss and my boss’s boss. I just handle the deals.”
@@ -95,12 +95,13 @@ Mike: “Everything looks good. Thanks for the stuff, Joseph.”
 Joseph: “Always a pleasure. If you need more, you know how to contact me Mike. No sharing though, not even with your friends over here. I’ll be seeing you.”
 With that, Joseph strolled away with Darrell at his side.
 <<show_character Backend 1 empty>>
-<<show_character Backend 3 empty>>
 <<show_character Backend 2 empty>>
+<<show_character Backend 3 empty>>
+<<show_character Backend 0 McKinnon>>
 McKinnon: “Morpheus, finish scene.”
 <<show_character Backend 1 Morpheus>>
 Morpheus: “Understood, exiting subject Cameron Smith.”
-<<fade_out Backgrounds 1>>
+<<fade_in Backgrounds 1>>
 <<stop_sound Backend Dealer_Room>>
 <<show_character Backend 1 empty>>
 <<show_character Backend 0 empty>>

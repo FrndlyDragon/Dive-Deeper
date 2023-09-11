@@ -25,6 +25,8 @@ Vera: “—risky. Are you sure about this?”
     <<show_character Backend 1 Morpheus>>
     Morpheus: "Subject agitated. Aborting."
     <<fade_in Backgrounds 1>>
+    <<show_character Backend 0 Empty>>
+    <<show_character Backend 1 Empty>>
     <<stop_sound Backend Vera>>
     <<load_scene Backend 3>>
 -> “Of course I am. I wouldn’t be here if I wasn’t.” 

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Yarn.Unity;
 
 /**
@@ -11,7 +12,7 @@ public class SoundManager : MonoBehaviour
     [SerializeField] Sounds[] audioSounds;
     public static SoundManager instance;
 
-    void Awake() {
+    void Start() {
         if (instance == null) {
             instance = this;
         }
@@ -27,7 +28,9 @@ public class SoundManager : MonoBehaviour
             sounds.source.loop = sounds.isLooping;
         }
 
-        PlaySound("Space_Calm", true);
+        if (SceneManager.GetActiveScene().buildIndex == 0) {
+            PlaySound("Space_Calm", true);
+        }
     }
 
     [YarnCommand("play_sound")]
